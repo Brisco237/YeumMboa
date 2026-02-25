@@ -35,11 +35,9 @@ export default function SectionCategory() {
                 </View>
             </View>
             <View style={styles.randomcategory}>
-                <View>
-                    <Text style={styles.randomtitle}>Quiz Aléatoire</Text>
-                    <Text style={styles.randomsubtitle}>Un mélange de toutes les <br/> catégories</Text>
-                </View>
                 <FontAwesome5 name="random" style={styles.iconrandom} />
+                <Text style={styles.randomtitle}>Quiz Aléatoire</Text>
+                <Text style={styles.randomsubtitle}>Un mélange de toutes les catégories</Text>
             </View>
         </View>
     );
@@ -59,16 +57,16 @@ const styles = StyleSheet.create({
     box:{
         marginTop:10,
         flexDirection:'row',
-        justifyContent:'space-around'
+        gap:5,
+        marginLeft:10,
+        marginRight:10,
     },
     theme:{
         backgroundColor:'white',
         padding:20,
         alignItems:'center',
         borderRadius:7,
-        width:180,
-        marginLeft:10,
-        marginRight:10,
+        flex:1,
 
     },
     themename:{
@@ -115,14 +113,12 @@ const styles = StyleSheet.create({
     /* random category */
     randomcategory:{
         marginTop:20,
-        marginLeft:20,
-        marginRight:20,
-        padding:15,
-        borderRadius:10,
+        marginLeft:10,
+        marginRight:10,
+        padding:20,
+        borderRadius:7,
         backgroundColor:colors["yellow"],
-        flexDirection:'row',
-        justifyContent:'space-between',
-
+        alignItems:'center',
     },
     randomtitle:{
         fontFamily:"PlusJakartaSans-Bold", 
@@ -131,11 +127,11 @@ const styles = StyleSheet.create({
     },
     randomsubtitle:{
         marginTop:5,
-        fontFamily:"PlusJakartaSans-Regular"
+        fontFamily:"PlusJakartaSans-Regular",
     },
     iconrandom:{
-        marginTop:15,
         color:'gray',
+        marginBottom:10,
         padding:10,
         fontSize:30,
         backgroundColor:'white',

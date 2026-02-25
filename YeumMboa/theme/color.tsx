@@ -3,5 +3,5 @@ export const colors = {
   "green": "#007a5e",
   "yellow": "#febd11",
   "background-light": "#f8f6f6",
-  "background-dark": "#211111",
+  "orange": "#ec5b13",
 };

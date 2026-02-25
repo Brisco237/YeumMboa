@@ -10,7 +10,7 @@ export default function Menu() {
         <View style={styles.container}>
             <View style={styles.iconenom}>
                 <MaterialIcons name="home-filled" style={styles.iconmenu} />
-                Home
+                Accueil
             </View>
             <View style={styles.iconenom}>
                 <SimpleLineIcons name="trophy" style={styles.iconmenu} />
@@ -22,7 +22,7 @@ export default function Menu() {
             </View>
             <View style={styles.iconenom}>
                 <Octicons name="gear" style={styles.iconmenu} />
-                Parametre
+                Paramètre
             </View>
         </View>
     );
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     iconmenu:{
         color:'gray',
         fontSize:25,
-        marginBottom:10,
+        marginBottom:5,
     },   
     iconenom:{
         fontFamily:'PlusJakartaSans-Bold',
