@@ -1,26 +1,26 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { colors } from '../theme/color';
+import { getReactNavigationConfig } from 'expo-router/build/getReactNavigationConfig';
 
 export default function Section1() {
     return (
         <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Bienvenue sur YeumMboa !</Text>
-            <Text style={styles.trait}></Text>
-            <Text style={styles.sectionDescription}>
-                Découvrez le Cameroun à travers une expérience ludique et interactive. 
-                Explorez et apprenez plus sur le Cameroun tout en jouant.
-            </Text>
-            <View style={styles.buttons}>
-                <Text style={styles.btn1}>Culture</Text>
-                <Text style={styles.btn2}>Histoire</Text>
-            </View>
+                <Text style={styles.sectionTitle}>Bienvenue sur YeumMboa !</Text>
+                <Text style={styles.sectionDescription}>
+                    Découvrez le Cameroun à travers une expérience ludique et interactive. 
+                    Explorez et apprenez plus sur le Cameroun tout en jouant.
+                </Text>
+                <View style={styles.buttons}>
+                    <Text style={styles.btn1}>Culture</Text>
+                    <Text style={styles.btn2}>Histoire</Text>
+                </View>
         </View>
     );
 }
 
 const styles = StyleSheet.create({
     section: {
-        marginTop:40,
+        marginTop:20,
         marginLeft: 16,
         marginRight: 16,
         backgroundColor: colors["green"],
@@ -55,10 +55,5 @@ const styles = StyleSheet.create({
         marginTop:20,
         flexDirection:'row',
         gap:5,
-    },
-    trait:{
-        height:1,
-        width:'100%',
-        color:'gray',
     },
 });

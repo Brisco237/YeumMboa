@@ -11,7 +11,7 @@ export default function Logo() {
           <Text>
             <Text style={styles.title}>YeumMboa</Text>
             <br/>
-            <Text style={styles.subtitle}>Découvre le cameroun en jouant</Text>
+            <Text style={styles.subtitle}>Redécouvre le cameroun</Text>
           </Text>
         </View>
       </View>

@@ -29,7 +29,7 @@ export default function SectionCategory() {
                     <Text style={styles.descriptheme}>Indication sur la carte</Text>
                 </View>
                 <View style={styles.theme}>
-                    <MaterialIcons name="museum" style={styles.museum} />
+                    <FontAwesome name="bank" style={styles.museum} />
                     <Text style={styles.themename}>Sites Archéo</Text>
                     <Text style={styles.descriptheme}>Vestiges & fouilles</Text>
                 </View>
@@ -41,7 +41,6 @@ export default function SectionCategory() {
                 </View>
                 <FontAwesome5 name="random" style={styles.iconrandom} />
             </View>
-            <Text style={styles.trait}></Text>
         </View>
     );
 }
@@ -58,7 +57,7 @@ const styles = StyleSheet.create({
         marginLeft:16,
     },
     box:{
-        marginTop:40,
+        marginTop:10,
         flexDirection:'row',
         justifyContent:'space-around'
     },
@@ -136,15 +135,10 @@ const styles = StyleSheet.create({
     },
     iconrandom:{
         marginTop:15,
-        color:'black',
+        color:'gray',
         padding:10,
         fontSize:30,
         backgroundColor:'white',
         borderRadius:10,
-    },
-    trait:{
-        height:1,
-        width:'100%',
-        color:'gray',
     },
 });
