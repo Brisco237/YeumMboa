@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native';
 import Logo from '../../components/logo';
 import Section1 from '../../components/section1';
+import SectionCategory from '../../components/section-category';        
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import { useFonts } from 'expo-font';
 
@@ -22,6 +23,9 @@ export default function HomeScreen() {
             </View>
             <View>
                 <Section1 />
+            </View>
+            <View>
+                <SectionCategory />
             </View>
         </View>
     );

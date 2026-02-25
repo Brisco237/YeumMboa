@@ -5,6 +5,7 @@ export default function Section1() {
     return (
         <View style={styles.section}>
             <Text style={styles.sectionTitle}>Bienvenue sur YeumMboa !</Text>
+            <Text style={styles.trait}></Text>
             <Text style={styles.sectionDescription}>
                 Découvrez le Cameroun à travers une expérience ludique et interactive. 
                 Explorez et apprenez plus sur le Cameroun tout en jouant.
@@ -27,6 +28,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
     },
     sectionTitle: {
+        fontFamily:'PlusJakartaSans-bold',
         color:'#fff',
         fontSize: 24,
     },
@@ -52,6 +54,11 @@ const styles = StyleSheet.create({
     buttons:{
         marginTop:20,
         flexDirection:'row',
-        gap:10,
-    }
+        gap:5,
+    },
+    trait:{
+        height:1,
+        width:'100%',
+        color:'gray',
+    },
 });
