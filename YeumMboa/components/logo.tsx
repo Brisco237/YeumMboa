@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
   title : {
     fontSize:20,
     color: colors["red"],
+    fontFamily: 'PlusJakartaSans-Bold',
   },
   book : {
     marginRight:8,
@@ -35,7 +36,6 @@ const styles = StyleSheet.create({
     marginTop:20,
   },
   logo: {
-    fontWeight: 'bold',
     flexDirection: "row",
     justifyContent: "flex-start",
     marginLeft:15,
@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     color:colors["green"],
-    fontSize: 12,
+    fontSize: 11,
+    fontFamily: 'PlusJakartaSans-Bold',
   },
 });
