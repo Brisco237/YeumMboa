@@ -1,29 +1,47 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Octicons from '@expo/vector-icons/Octicons';
+import { useRouter } from 'expo-router';
 
 
 export default function Menu() {
+    const router = useRouter();
+
     return(
         <View style={styles.container}>
-            <View style={styles.iconenom}>
+            <TouchableOpacity 
+                style={styles.iconenom}
+                onPress={() => router.push('/(tabs)')}
+            >
                 <MaterialIcons name="home-filled" style={styles.iconmenu} />
-                Accueil
-            </View>
-            <View style={styles.iconenom}>
+                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Accueil</Text>
+            </TouchableOpacity>
+            
+            <TouchableOpacity 
+                style={styles.iconenom}
+                onPress={() => router.push('/classement')}
+            >
                 <SimpleLineIcons name="trophy" style={styles.iconmenu} />
-                Classement
-            </View>
-            <View style={styles.iconenom}>
+                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Classement</Text>
+            </TouchableOpacity>
+            
+            <TouchableOpacity 
+                style={styles.iconenom}
+                onPress={() => router.push('/parcours')}
+            >
                 <FontAwesome6 name="clock-rotate-left" style={styles.iconmenu} />
-                Parcours
-            </View>
-            <View style={styles.iconenom}>
+                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Parcours</Text>
+            </TouchableOpacity>
+            
+            <TouchableOpacity 
+                style={styles.iconenom}
+                onPress={() => router.push('/(tabs)/parametre')}
+            >
                 <Octicons name="gear" style={styles.iconmenu} />
-                Paramètre
-            </View>
+                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Paramètre</Text>
+            </TouchableOpacity>
         </View>
     );
 }
