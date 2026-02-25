@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import Menu from '../../components/menu';
 
 export default function ClassementScreen() {
   return (
@@ -9,7 +8,6 @@ export default function ClassementScreen() {
         <Text style={styles.title}>Classement 🏆</Text>
         <Text style={styles.subtitle}>Consultez votre position dans le classement</Text>
       </View>
-      <Menu />
     </View>
   );
 }

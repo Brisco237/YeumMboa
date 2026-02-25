@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     randomtitle:{
         fontFamily:"PlusJakartaSans-Bold", 
         fontWeight:'bold',
-        fontSize:18,
+        fontSize:14,
     },
     randomsubtitle:{
         marginTop:5,

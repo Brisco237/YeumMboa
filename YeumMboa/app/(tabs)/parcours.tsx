@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import Menu from '../../components/menu';
+
 
 export default function ParcoursScreen() {
   return (
@@ -9,7 +9,6 @@ export default function ParcoursScreen() {
         <Text style={styles.title}>Parcours ⏱️</Text>
         <Text style={styles.subtitle}>Suivez votre parcours d'apprentissage</Text>
       </View>
-      <Menu />
     </View>
   );
 }

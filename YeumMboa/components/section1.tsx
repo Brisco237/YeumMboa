@@ -5,15 +5,15 @@ import { getReactNavigationConfig } from 'expo-router/build/getReactNavigationCo
 export default function Section1() {
     return (
         <View style={styles.section}>
-                <Text style={styles.sectionTitle}>Bienvenue sur YeumMboa !</Text>
-                <Text style={styles.sectionDescription}>
-                    Découvrez le Cameroun à travers une expérience ludique et interactive. 
-                    Explorez et apprenez plus sur le Cameroun tout en jouant.
-                </Text>
-                <View style={styles.buttons}>
-                    <Text style={styles.btn1}>Culture</Text>
-                    <Text style={styles.btn2}>Histoire</Text>
-                </View>
+            <Text style={styles.sectionTitle}>Bienvenue sur YeumMboa !</Text>
+            <Text style={styles.sectionDescription}>
+                Découvrez le Cameroun à travers une expérience ludique et interactive. 
+                Explorez et apprenez plus sur le Cameroun tout en jouant.
+            </Text>
+            <View style={styles.buttons}>
+                <Text style={styles.btn1}>Culture</Text>
+                <Text style={styles.btn2}>Histoire</Text>
+            </View>
         </View>
     );
 }

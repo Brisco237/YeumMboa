@@ -1,25 +1,30 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import Menu from '../../components/menu';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Switch } from 'react-native';
+import AntDesign from '@expo/vector-icons/AntDesign';
+import { useRouter } from 'expo-router';
+import Trait from '../../components/trait';
+import Logo from '../../components/logo';
+import ReglageSon from '../../components/parametre-page/reglageson';
+import {colors} from '../../theme/color';
+
 
 export default function SettingsScreen() {
+  const router = useRouter();
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>Paramètres ⚙️</Text>
+        <TouchableOpacity onPress={() => router.push('/(tabs)')}>
+          <AntDesign name="arrow-left" style={styles.arrowleft} />
+        </TouchableOpacity>
+        <Text style={styles.title}>Paramètres</Text>
       </View>
-      <View style={styles.content}>
-        <View style={styles.settingItem}>
-          <Text style={styles.settingText}>Notification</Text>
-        </View>
-        <View style={styles.settingItem}>
-          <Text style={styles.settingText}>Langue</Text>
-        </View>
-        <View style={styles.settingItem}>
-          <Text style={styles.settingText}>À propos</Text>
-        </View>
+      <Trait />
+      <View style={styles.logo} >
+        <Logo />
       </View>
-      <Menu />
+      <View>
+        <ReglageSon />
+      </View>
     </View>
   );
 }
@@ -27,33 +32,26 @@ export default function SettingsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f8f6f6',
+    backgroundColor:colors['background-light'],
+  },
+  arrowleft:{
+    fontSize: 24,
+    marginTop:5,
   },
   header: {
-    paddingVertical: 20,
-    paddingHorizontal: 15,
-    borderBottomWidth: 1,
-    borderBottomColor: '#d9d9d9',
+    marginTop:30,
+    marginLeft:20,
+    marginBottom:10,
+    flexDirection:'row',
+    gap:50,
   },
   title: {
+    fontFamily:'PlusJakartaSans-Bold',
     fontSize: 24,
     fontWeight: 'bold',
   },
-  content: {
-    flex: 1,
-    paddingHorizontal: 15,
-    paddingVertical: 15,
-  },
-  settingItem: {
-    paddingVertical: 15,
-    paddingHorizontal: 10,
-    backgroundColor: '#fff',
-    marginBottom: 10,
-    borderRadius: 8,
-  },
-  settingText: {
-    fontSize: 16,
-    color: '#333',
-    fontWeight: '500',
+  logo:{
+    marginTop:30,
+    alignItems:'center',
   }
 });

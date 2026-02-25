@@ -5,6 +5,7 @@ import SectionCategory from '../../components/section-category';
 import Menu from '../../components/menu'     
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import { useFonts } from 'expo-font';
+import Trait from '../../components/trait';
 
 
 export default function HomeScreen() {
@@ -22,13 +23,7 @@ export default function HomeScreen() {
                 <Logo />
                 <FontAwesome5 name="user-circle" style={styles.usericon} />
             </View>
-            <View
-                    style={{
-                    borderBottomColor: '#d9d9d9',
-                    borderBottomWidth: 1,
-                    width: '100%',     
-                    marginTop:10,
-                }}/>
+            <Trait />
             <ScrollView>
                 <View style={styles.containercolor}>
                     <Section1 />
