@@ -3,7 +3,7 @@ import Logo from '../../components/logo';
 import Section1 from '../../components/section1';
 import SectionCategory from '../../components/section-category';   
 import Menu from '../../components/menu'     
-import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { useFonts } from 'expo-font';
 import Trait from '../../components/trait';
 
@@ -21,7 +21,7 @@ export default function HomeScreen() {
         <View style={styles.container}>
             <View style={styles.header}>
                 <Logo />
-                <FontAwesome5 name="user-circle" style={styles.usericon} />
+                <FontAwesome name="user-circle-o" style={styles.usericon} />
             </View>
             <Trait />
             <ScrollView>
@@ -54,6 +54,6 @@ const styles = StyleSheet.create({
     fontSize: 25,
     marginRight:20,
     fontWeight: 'bold',
-    color:'black',
+    color:'gray',
   }, 
 });

@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
-import AntDesign from '@expo/vector-icons/AntDesign';
 import Trait from '../../components/trait';
 import {colors} from '../../theme/color';
 import { useRouter } from 'expo-router';
 import Banniere from '../../components/stats-page/banniere';  
 import BestScore from '../../components/stats-page/bestscore';
+import ArrowLeft from '../../components/arrow-left';
 
 
 export default function StatsScreen() {
@@ -14,9 +14,7 @@ export default function StatsScreen() {
   return (
     <View style={styles.container}>
         <View style={styles.header}>
-          <TouchableOpacity onPress={() => router.push('/(tabs)')}>
-            <AntDesign name="arrow-left" style={styles.arrowleft} />
-          </TouchableOpacity>
+          <ArrowLeft />
           <Text style={styles.title}>Statistiques</Text>
         </View>
         <ScrollView>

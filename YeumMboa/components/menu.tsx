@@ -1,8 +1,8 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import Entypo from '@expo/vector-icons/Entypo';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import Octicons from '@expo/vector-icons/Octicons';
+import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { useRouter } from 'expo-router';
 
 
@@ -29,17 +29,17 @@ export default function Menu() {
             
             <TouchableOpacity 
                 style={styles.iconenom}
-                onPress={() => router.push('/parcours')}
+                onPress={() => router.push('/missions')}
             >
-                <FontAwesome6 name="clock-rotate-left" style={styles.iconmenu} />
-                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Parcours</Text>
+                <Entypo name="flag" style={styles.iconmenu} />
+                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Missions</Text>
             </TouchableOpacity>
             
             <TouchableOpacity 
                 style={styles.iconenom}
                 onPress={() => router.push('/(tabs)/parametre')}
             >
-                <Octicons name="gear" style={styles.iconmenu} />
+                <FontAwesome6 name="gear" style={styles.iconmenu} />
                 <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Paramètre</Text>
             </TouchableOpacity>
         </View>

@@ -7,7 +7,7 @@ export default function Logo() {
     return (
       <View style={styles.homesection}>
         <View style={styles.logo}>
-        <FontAwesome5 name="globe-africa" style={styles.book} />
+        <FontAwesome5 name="globe-africa" style={styles.globe} />
           <Text>
             <Text style={styles.title}>YeumMboa</Text>
             <br/>
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     color: colors["red"],
     fontFamily: 'PlusJakartaSans-Bold',
   },
-  book : {
+  globe: {
     marginRight:8,
     borderRadius: 10,
     padding: 10,
