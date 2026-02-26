@@ -4,6 +4,7 @@ import Menu from '../../components/menu';
 import { colors } from '../../theme/color';
 import Logo from '../../components/logo';
 import Trait from '../../components/trait'
+import Banniere1 from '../../components/missions-page/banniere1'; 
 
 
 export default function ParcoursScreen() {
@@ -15,7 +16,7 @@ export default function ParcoursScreen() {
       </View>
       <ScrollView>
         <View style={styles.container}>
-
+          <Banniere1 />
         </View>
       </ScrollView>
 
@@ -26,6 +27,7 @@ export default function ParcoursScreen() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor:colors['background-light'],
+    marginHorizontal:20,
   },
   header:{
     alignItems:'center',
