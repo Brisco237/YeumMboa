@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import SimpleLineIcons from '@expo/vector-icons/SimpleLineIcons';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import Ionicons from '@expo/vector-icons/Ionicons';
 import Octicons from '@expo/vector-icons/Octicons';
 import { useRouter } from 'expo-router';
 
@@ -21,10 +21,10 @@ export default function Menu() {
             
             <TouchableOpacity 
                 style={styles.iconenom}
-                onPress={() => router.push('/classement')}
+                onPress={() => router.push('/stats')}
             >
-                <SimpleLineIcons name="trophy" style={styles.iconmenu} />
-                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Classement</Text>
+                <Ionicons name="stats-chart" style={styles.iconmenu} />
+                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Stats</Text>
             </TouchableOpacity>
             
             <TouchableOpacity 

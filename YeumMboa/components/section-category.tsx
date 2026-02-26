@@ -37,7 +37,7 @@ export default function SectionCategory() {
             <View style={styles.randomcategory}>
                 <FontAwesome5 name="random" style={styles.iconrandom} />
                 <Text style={styles.randomtitle}>Quiz Aléatoire</Text>
-                <Text style={styles.randomsubtitle}>Un mélange de toutes les catégories</Text>
+                <Text style={styles.randomsubtitle}>Un mélange de tous les thèmes</Text>
             </View>
         </View>
     );

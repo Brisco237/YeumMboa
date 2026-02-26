@@ -28,13 +28,7 @@ export default function HomeScreen() {
                 <View style={styles.containercolor}>
                     <Section1 />
                     <SectionCategory />
-                    <View
-                        style={{
-                        borderBottomColor: '#d9d9d9',
-                        borderBottomWidth: 1,
-                        width: '100%',     
-                        marginTop:50,
-                    }}/>
+                    <Trait />
                 </View>
             </ScrollView>
             <View>

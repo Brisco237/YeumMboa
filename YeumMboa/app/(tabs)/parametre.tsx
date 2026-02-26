@@ -41,8 +41,11 @@ const styles = StyleSheet.create({
     backgroundColor:colors['background-light'],
   },
   arrowleft:{
-    fontSize: 20,
+    fontSize:18,
     marginTop:5,
+    backgroundColor:'#f3eaea',
+    borderRadius:'50%',
+    padding:10,
   },
   header: {
     marginTop:20,
@@ -55,6 +58,7 @@ const styles = StyleSheet.create({
     fontFamily:'PlusJakartaSans-Bold',
     fontSize: 20,
     fontWeight: 'bold',
+    marginTop:10,
   },
   logo:{
     marginTop:20,
