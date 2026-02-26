@@ -51,9 +51,9 @@ const styles = StyleSheet.create({
   },
   usericon :{
     marginTop :30,
-    fontSize: 25,
+    fontSize: 20,
     marginRight:20,
     fontWeight: 'bold',
-    color:'gray',
+    color:'gray'
   }, 
 });

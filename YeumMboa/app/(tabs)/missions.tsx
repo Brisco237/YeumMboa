@@ -5,6 +5,7 @@ import { colors } from '../../theme/color';
 import Logo from '../../components/logo';
 import Trait from '../../components/trait'
 import Banniere1 from '../../components/missions-page/banniere1'; 
+import ParcoursProgression from '@/components/missions-page/parcours-progression';
 
 
 export default function ParcoursScreen() {
@@ -17,9 +18,9 @@ export default function ParcoursScreen() {
       <ScrollView>
         <View style={styles.container}>
           <Banniere1 />
+          <ParcoursProgression />
         </View>
       </ScrollView>
-
     </View>
   );
 }
