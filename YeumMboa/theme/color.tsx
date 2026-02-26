@@ -1,7 +1,9 @@
 export const colors = {
-  "red": "#c9131c",
+  "red": "rgb(201, 19, 28)",
+  "s-red": "#f0c2c4",
   "green": "#007a5e",
-  "yellow": "#febd11",
+  "s-yellow": "#fcd059fd",
+  "yellow":"#febd11",
   "background-light": "#f8f6f6",
   "orange": "#ec5b13",
   's-green': '#c6eec0',

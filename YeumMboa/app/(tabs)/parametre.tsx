@@ -6,7 +6,7 @@ import Logo from '../../components/logo';
 import ReglageSon from '../../components/parametre-page/reglageson';
 import {colors} from '../../theme/color';
 import LangueSupport from '../../components/parametre-page/langue-support'; 
-import ArrowLeftt from '../../components/arrow-left';
+import ArrowLeft from '../../components/arrow-left';
 
 
 export default function SettingsScreen() {
@@ -14,7 +14,7 @@ export default function SettingsScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <ArrowLeftt />
+        <ArrowLeft />
         <Text style={styles.title}>Paramètres</Text>
       </View>
       <Trait />

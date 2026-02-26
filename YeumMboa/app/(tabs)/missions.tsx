@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   },
   title:{
     fontFamily:'Montserrat-Bold',
-    fontSize:26,
+    fontSize:20,
     marginTop:20,
   }
 });
