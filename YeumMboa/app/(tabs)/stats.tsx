@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import Trait from '../../components/trait';
 import {colors} from '../../theme/color';
 import { useRouter } from 'expo-router';
 import Banniere from '../../components/stats-page/banniere';  
+import BestScore from '../../components/stats-page/bestscore';
 
 
 export default function StatsScreen() {
@@ -18,10 +19,11 @@ export default function StatsScreen() {
           </TouchableOpacity>
           <Text style={styles.title}>Statistiques</Text>
         </View>
-        <Trait />
-        <View>
+        <ScrollView>
+          <Trait />
           <Banniere />
-        </View>
+          <BestScore />
+        </ScrollView>
     </View>
   );
 }
