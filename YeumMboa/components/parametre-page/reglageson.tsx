@@ -31,7 +31,7 @@ export default function ReglageSon() {
             </View>
             <Switch
               trackColor={{ false: "#767577", true:'#c6eec0' }}
-              thumbColor={isMusic ? "#ffffff" : "#f4f3f4"}
+              thumbColor={isMusic ? "#c6eec0" : "#f4f3f4"}
               onValueChange={toggleMusic}
               value={isMusic}
               style={styles.switch}
@@ -44,7 +44,7 @@ export default function ReglageSon() {
               <Text style={styles.textson}>Effets sonores</Text> 
             </View>
             <Switch
-              trackColor={{ false: "#767577", true:'#edf394' }}
+              trackColor={{ false: "#767577", true:'#c6eec0' }}
               thumbColor={isSoundEffects ? "#edf394" : "#f4f3f4"}
               onValueChange={toggleSoundEffects}
               value={isSoundEffects}

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Switch } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Switch, ScrollView } from 'react-native';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { useRouter } from 'expo-router';
 import Trait from '../../components/trait';
 import Logo from '../../components/logo';
 import ReglageSon from '../../components/parametre-page/reglageson';
 import {colors} from '../../theme/color';
+import LangueSupport from '../../components/parametre-page/langue-support'; 
 
 
 export default function SettingsScreen() {
@@ -19,12 +20,17 @@ export default function SettingsScreen() {
         <Text style={styles.title}>Paramètres</Text>
       </View>
       <Trait />
-      <View style={styles.logo} >
-        <Logo />
-      </View>
-      <View>
-        <ReglageSon />
-      </View>
+      <ScrollView>
+        <View style={styles.logo} >
+          <Logo />
+        </View>
+        <View>
+          <ReglageSon />
+        </View>
+        <View>
+          <LangueSupport />
+        </View>
+      </ScrollView>
     </View>
   );
 }
@@ -35,11 +41,11 @@ const styles = StyleSheet.create({
     backgroundColor:colors['background-light'],
   },
   arrowleft:{
-    fontSize: 24,
+    fontSize: 20,
     marginTop:5,
   },
   header: {
-    marginTop:30,
+    marginTop:20,
     marginLeft:20,
     marginBottom:10,
     flexDirection:'row',
@@ -47,11 +53,11 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily:'PlusJakartaSans-Bold',
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'bold',
   },
   logo:{
-    marginTop:30,
+    marginTop:20,
     alignItems:'center',
   }
 });
