@@ -12,6 +12,8 @@ export default function HomeScreen() {
     const [fontsLoaded] = useFonts({
         'PlusJakartaSans-Bold': require('../../assets/fonts/PlusJakartaSans-Bold.ttf'),
         'PlusJakartaSans-Regular': require('../../assets/fonts/PlusJakartaSans-Regular.ttf'),
+        'Montserrat-Bold': require('../../assets/fonts/Montserrat-Bold.ttf'),
+        'Montserrat-Regular': require('../../assets/fonts/Montserrat-Regular.ttf'),
     });
 
     if (!fontsLoaded) {

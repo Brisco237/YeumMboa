@@ -1,4 +1,5 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { useRouter } from 'expo-router';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
@@ -7,21 +8,26 @@ import { colors } from '../theme/color';
 
 
 export default function SectionCategory() {
+    const router = useRouter();
+
     return(
         <View style={styles.container}>
             <Text style={styles.title}>Thèmes de Quiz !</Text>
             <View style={styles.box}>
-                <View style={styles.theme}>
+                <TouchableOpacity style={styles.theme} 
+                    onPress={() => router.push('/quiz-territoire')}
+                >
                     <FontAwesome5 name="globe-africa" style={styles.globe} />
                     <Text style={styles.themename}>Territoire</Text>
                     <Text style={styles.descriptheme}>Géo & Localisation</Text>
-                </View>
+                </TouchableOpacity>
                 <View style={styles.theme}>
                     <FontAwesome name="image" style={styles.img} />
                     <Text style={styles.themename}>Iconographie</Text>
                     <Text style={styles.descriptheme}>Quiz visuel</Text>
                 </View>
             </View>
+
             <View style={styles.box}>
                 <View style={styles.theme}>
                     <FontAwesome6 name="location-dot" style={styles.localisation} />
@@ -34,6 +40,7 @@ export default function SectionCategory() {
                     <Text style={styles.descriptheme}>Vestiges & fouilles</Text>
                 </View>
             </View>
+
             <View style={styles.randomcategory}>
                 <FontAwesome5 name="random" style={styles.iconrandom} />
                 <Text style={styles.randomtitle}>Quiz Aléatoire</Text>
@@ -53,9 +60,10 @@ const styles = StyleSheet.create({
         fontSize:20,
         fontFamily:'PlusJakartaSans-Bold',
         marginLeft:16,
+        marginBottom:25,
     },
     box:{
-        marginTop:10,
+        marginTop:7,
         flexDirection:'row',
         gap:5,
         marginLeft:10,
@@ -112,7 +120,7 @@ const styles = StyleSheet.create({
     },
     /* random category */
     randomcategory:{
-        marginTop:20,
+        marginTop:10,
         marginLeft:10,
         marginRight:10,
         padding:20,

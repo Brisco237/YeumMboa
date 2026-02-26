@@ -38,13 +38,6 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     gap: 50,
   },
-  arrowleft:{
-    fontSize: 20,
-    marginTop:5,
-    backgroundColor:'#f3eaea',
-    borderRadius:'50%',
-    padding:10,
-  },
   title:{
     fontFamily:'PlusJakartaSans-Bold',
     fontSize:20,

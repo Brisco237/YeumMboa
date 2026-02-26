@@ -2,17 +2,16 @@ import React from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import Menu from '../../components/menu';
 import { colors } from '../../theme/color';
-import Logo from '../../components/logo';
 import Trait from '../../components/trait'
 import Banniere1 from '../../components/missions-page/banniere1'; 
 import ParcoursProgression from '@/components/missions-page/parcours-progression';
 
 
-export default function ParcoursScreen() {
+export default function MissionsScreen() {
   return (
     <View>
       <View style={styles.header}>
-        <Logo />
+        <Text style={styles.title}>Missions</Text>
         <Trait />
       </View>
       <ScrollView>
@@ -31,7 +30,12 @@ const styles = StyleSheet.create({
     marginHorizontal:20,
   },
   header:{
-    alignItems:'center',
     backgroundColor:'white',
+    alignItems:'center',
+  },
+  title:{
+    fontFamily:'Montserrat-Bold',
+    fontSize:26,
+    marginTop:20,
   }
 });

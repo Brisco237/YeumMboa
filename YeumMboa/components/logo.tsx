@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   title : {
     fontSize:20,
     color: colors["red"],
-    fontFamily: 'PlusJakartaSans-Bold',
+    fontFamily: 'Montserrat-Bold',
   },
   globe: {
     marginRight:8,
@@ -44,6 +44,6 @@ const styles = StyleSheet.create({
   subtitle: {
     color:colors["green"],
     fontSize: 11,
-    fontFamily: 'PlusJakartaSans-Bold',
+    fontFamily: 'Montserrat-Bold',
   },
 });

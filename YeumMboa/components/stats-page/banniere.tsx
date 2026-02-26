@@ -34,14 +34,14 @@ const styles = StyleSheet.create({
     },
     score:{
         color:'white',
-        fontFamily:'PlusJakartaSans-Bold',
+        fontFamily:'Montserrat-Bold',
         fontSize: 28,
         fontWeight: 'bold',
         marginBottom: 10,
     },
     points:{
         color:'white',
-        fontFamily:'PlusJakartaSans-Regular',
+        fontFamily:'Montserrat-Regular',
         fontSize: 14,
     },
     categorybest:{

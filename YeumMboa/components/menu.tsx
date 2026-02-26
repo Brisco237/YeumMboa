@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import Entypo from '@expo/vector-icons/Entypo';
+import Feather from '@expo/vector-icons/Feather';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { useRouter } from 'expo-router';
@@ -16,7 +16,15 @@ export default function Menu() {
                 onPress={() => router.push('/(tabs)')}
             >
                 <MaterialIcons name="home-filled" style={styles.iconmenu} />
-                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Accueil</Text>
+                <Text style={styles.iconenom}>Accueil</Text>
+            </TouchableOpacity>
+            
+            <TouchableOpacity 
+                style={styles.iconenom}
+                onPress={() => router.push('/missions')}
+            >
+                <Feather name="check-circle" style={styles.iconmenu} />
+                <Text style={styles.iconenom}>Missions</Text>
             </TouchableOpacity>
             
             <TouchableOpacity 
@@ -24,23 +32,15 @@ export default function Menu() {
                 onPress={() => router.push('/stats')}
             >
                 <Ionicons name="stats-chart" style={styles.iconmenu} />
-                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Stats</Text>
+                <Text style={styles.iconenom}>Stats</Text>
             </TouchableOpacity>
             
             <TouchableOpacity 
                 style={styles.iconenom}
-                onPress={() => router.push('/missions')}
-            >
-                <Entypo name="flag" style={styles.iconmenu} />
-                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Missions</Text>
-            </TouchableOpacity>
-            
-            <TouchableOpacity 
-                style={styles.iconenom}
-                onPress={() => router.push('/(tabs)/parametre')}
+                onPress={() => router.push('/parametre')}
             >
                 <FontAwesome6 name="gear" style={styles.iconmenu} />
-                <Text style={{fontFamily:'PlusJakartaSans-Bold', fontSize:12}}>Paramètre</Text>
+                <Text style={styles.iconenom}>Paramètre</Text>
             </TouchableOpacity>
         </View>
     );
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         marginBottom:5,
     },   
     iconenom:{
-        fontFamily:'PlusJakartaSans-Bold',
+        fontFamily:'Montserrat-Bold',
         fontSize:12,
         flexDirection:'column',
         marginTop:10,
