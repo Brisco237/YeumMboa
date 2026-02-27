@@ -14,11 +14,15 @@ export default function LangueSupport() {
             <View style={styles.buttonlangue}>
                 <TouchableOpacity style={[styles.button,language === "Français" && styles.active]} 
                     onPress={()=>setLanguage('Français')}>
-                    <Text style={language === "Français" && { color: "white" }}>Français</Text>
+                    <Text style={language === "Français" && {color:"white",fontFamily:'Montserrat-Bold'}}>
+                      <Text style={{fontFamily:'Montserrat-Bold'}}>Français</Text>
+                    </Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.button,language === "Anglais" && styles.active]} 
                     onPress={()=>setLanguage('Anglais')}>
-                    <Text style={language === "Anglais" && { color: "white" }}>Anglais</Text>
+                    <Text style={language === "Anglais" && {color:"white",fontFamily:'Montserrat-Bold'}}>
+                      <Text style={{fontFamily:'Montserrat-Bold'}}>Anglais</Text>
+                    </Text>
                 </TouchableOpacity>
             </View>
             <Text style={styles.title2}>Support</Text>

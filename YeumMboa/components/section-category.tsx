@@ -21,11 +21,13 @@ export default function SectionCategory() {
                     <Text style={styles.themename}>Territoire</Text>
                     <Text style={styles.descriptheme}>Géo & Localisation</Text>
                 </TouchableOpacity>
-                <View style={styles.theme}>
+                <TouchableOpacity style={styles.theme}
+                    onPress={() => router.push('/quiz-visuel')}
+                >
                     <FontAwesome name="image" style={styles.img} />
                     <Text style={styles.themename}>Iconographie</Text>
                     <Text style={styles.descriptheme}>Quiz visuel</Text>
-                </View>
+                </TouchableOpacity>
             </View>
 
             <View style={styles.box}>

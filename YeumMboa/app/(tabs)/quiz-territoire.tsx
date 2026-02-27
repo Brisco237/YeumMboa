@@ -19,7 +19,7 @@ export default function QuizTerritoire(){
             <ScrollView>
                 <View style={styles.container}>
                     <Text style={styles.title}>Explorez le Cameroun</Text>
-                    <Text style={styles.text}>Testez vos connaissance sur l'administration administrative
+                    <Text style={styles.text}>Testez vos connaissance sur l'organisation administrative
                         et géographique du cameroun.
                     </Text>
                     <ChoixQuiz />
