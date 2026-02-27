@@ -3,6 +3,7 @@ import { useRouter } from 'expo-router';
 import ArrowLeft from "../../components/arrow-left";
 import Trait from '../../components/trait'; 
 import { colors } from '../../theme/color'
+import VieScore from "../../components/quiz-visuel/vie-score";
 
 export default function QuizVisuel(){
     return(
@@ -17,7 +18,8 @@ export default function QuizVisuel(){
                 </View>
                 <ScrollView>
                     <View style={styles.container}>
-
+                        <VieScore />
+                        <Trait />
                     </View>
                 </ScrollView>
             </View>

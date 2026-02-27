@@ -1,6 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
-import { withLayoutContext } from 'expo-router';
 import { colors } from '../theme/color';
 
 export default function Logo() {
