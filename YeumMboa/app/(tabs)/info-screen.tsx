@@ -4,6 +4,7 @@ import ArrowLeft from '../../components/arrow-left';
 import Trait from '../../components/trait';
 import {colors} from '../../theme/color';
 import InfoMission from '../../components/info-screen/info-mission';
+import Equipe from '../../components/info-screen/equipe';
 
 
 export default function InfoSreen(){
@@ -20,8 +21,7 @@ export default function InfoSreen(){
                 <View style={{marginHorizontal:20}}>
                     <View style={{alignItems:'center',marginVertical:15}}><Logo/></View>
                     <View><InfoMission /></View>
-                    <View>
-                    </View>
+                    <View><Equipe /></View>
                 </View>
             </ScrollView>
         </View>

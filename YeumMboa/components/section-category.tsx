@@ -77,7 +77,6 @@ const styles = StyleSheet.create({
         alignItems:'center',
         borderRadius:7,
         flex:1,
-
     },
     themename:{
         fontSize:14,
