@@ -38,13 +38,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor:colors['background-light'],
   },
-  arrowleft:{
-    fontSize:18,
-    marginTop:5,
-    backgroundColor:'#f3eaea',
-    borderRadius:'50%',
-    padding:10,
-  },
   header: {
     marginTop:20,
     marginLeft:20,

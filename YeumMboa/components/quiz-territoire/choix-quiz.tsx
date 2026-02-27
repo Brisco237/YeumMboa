@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
         backgroundColor:'white',
         padding:15,
         borderRadius:10,
-        marginVertical:20,
+        marginBottom:10,
     },
     map:{
         fontSize:18,

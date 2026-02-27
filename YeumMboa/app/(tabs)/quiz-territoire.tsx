@@ -18,7 +18,7 @@ export default function QuizTerritoire(){
             </View>
             <ScrollView>
                 <View style={styles.container}>
-                    <Text style={styles.title}>Explorez le Cameroun</Text>
+                    <Text style={styles.title1}>Explorez le Cameroun</Text>
                     <Text style={styles.text}>Testez vos connaissance sur l'organisation administrative
                         et géographique du cameroun.
                     </Text>
@@ -30,27 +30,31 @@ export default function QuizTerritoire(){
 }
 
 const styles = StyleSheet.create({
-    header: {
+  header: {
     backgroundColor:'white',
   },
   container:{
     marginHorizontal:20,
+  },
+  title: {
+    fontFamily:'Montserrat-Bold',
+    fontSize: 20,
+    marginTop:20,
   },
   line:{
     flexDirection:'row',
     gap:50,
     marginLeft:10,
   },
-  title: {
-    fontFamily:'Montserrat-Bold',
-    fontSize: 20,
-    fontWeight: 'bold',
+  title1:{
     marginTop:20,
+    fontFamily:'Montserrat-Bold',
+    fontSize:20,
   },
   text:{
     fontFamily:'Montserrat-Regular',
     marginTop:10,
-
+    marginBottom:15,
   }
 
 });
