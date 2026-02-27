@@ -5,6 +5,7 @@ import Trait from '../../components/trait';
 import {colors} from '../../theme/color';
 import InfoMission from '../../components/info-screen/info-mission';
 import Equipe from '../../components/info-screen/equipe';
+import ReferenceInfo from '../../components/info-screen/reference-infos';
 
 
 export default function InfoSreen(){
@@ -22,6 +23,7 @@ export default function InfoSreen(){
                     <View style={{alignItems:'center',marginVertical:15}}><Logo/></View>
                     <View><InfoMission /></View>
                     <View><Equipe /></View>
+                    <View><ReferenceInfo /></View>
                 </View>
             </ScrollView>
         </View>
@@ -32,6 +34,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor:colors['background-light'],
+    marginBottom:20
   },
   title: {
     fontFamily:'Montserrat-Bold',
