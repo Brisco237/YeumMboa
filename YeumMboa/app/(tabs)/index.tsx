@@ -1,14 +1,16 @@
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, ScrollView,TouchableOpacity } from 'react-native';
 import Logo from '../../components/logo';
 import Section1 from '../../components/section1';
 import SectionCategory from '../../components/section-category';   
 import Menu from '../../components/menu'     
-import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { Entypo } from "@expo/vector-icons";
 import { useFonts } from 'expo-font';
 import Trait from '../../components/trait';
+import { useRouter } from 'expo-router';
 
 
 export default function HomeScreen() {
+    const router = useRouter();
     const [fontsLoaded] = useFonts({
         'PlusJakartaSans-Bold': require('../../assets/fonts/PlusJakartaSans-Bold.ttf'),
         'PlusJakartaSans-Regular': require('../../assets/fonts/PlusJakartaSans-Regular.ttf'),
@@ -23,7 +25,9 @@ export default function HomeScreen() {
         <View style={styles.container}>
             <View style={styles.header}>
                 <Logo />
-                <FontAwesome name="user-circle-o" style={styles.usericon} />
+                <TouchableOpacity onPress={() => router.push('/info-screen')}>
+                    <Entypo name="info-with-circle" style={styles.infoicon} />
+                </TouchableOpacity>
             </View>
             <Trait />
             <ScrollView>
@@ -51,7 +55,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  usericon :{
+  infoicon :{
     marginTop :30,
     fontSize: 20,
     marginRight:20,

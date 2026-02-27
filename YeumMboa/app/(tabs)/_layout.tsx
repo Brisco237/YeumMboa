@@ -8,6 +8,7 @@ export default function TabsLayout() {
       }}
     >
       <Stack.Screen name="index" options={{ title: 'Accueil' }} />
+      <Stack.Screen name="info-screen" options={{ title: 'Info-screen'}} />
       <Stack.Screen name="stats" options={{ title: 'Stats' }} />
       <Stack.Screen name="missions" options={{ title: 'Missions' }} />
       <Stack.Screen name="parametre" options={{ title: 'Paramètres' }} />

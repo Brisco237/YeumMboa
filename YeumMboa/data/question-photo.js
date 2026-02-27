@@ -1,21 +1,21 @@
 export const quizData = [
   {
     id: 1,
-    image: require("../assets/images/um.jfif"),
+    image: require("../assets/images/um.png"),
     reponse: "Ruben um nyobè",
     choix: [
       "Ernest Ouandié",
       "Felix Roland Moumié",
-      "Martin Singap",
+      "Ruben um nyobè",
       "Gérome Ngom",
     ],
   },
   {
     id: 2,
-    image: require("../assets/images/oundié.jfif"),
+    image: require("../assets/images/ouandié.png"),
     reponse: "Ernest Oundié",
     choix: [
-      "Felix Sabaleko",
+      "Ernest Oundié",
       "John Ngu Foncha",
       "Ahmadou Ahidjo",
       "Castor Ossendé Afana",
