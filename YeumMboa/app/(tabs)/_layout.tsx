@@ -14,6 +14,7 @@ export default function TabsLayout() {
       <Stack.Screen name="parametre" options={{ title: 'Paramètres' }} />
       <Stack.Screen name="quiz-territoire" options={{ title: 'Quiz-territoire' }} />
       <Stack.Screen name="quiz-visuel" options={{ title: 'Quiz-visuel' }} />
+      <Stack.Screen name="resultat" options={{ title: 'Resultat' }} />
     </Stack>
   );
 }

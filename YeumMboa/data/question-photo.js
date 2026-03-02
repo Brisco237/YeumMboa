@@ -13,9 +13,9 @@ export const quizData = [
   {
     id: 2,
     image: require("../assets/images/ouandié.png"),
-    reponse: "Ernest Oundié",
+    reponse: "Ernest Ouandié",
     choix: [
-      "Ernest Oundié",
+      "Ernest Ouandié",
       "John Ngu Foncha",
       "Ahmadou Ahidjo",
       "Castor Ossendé Afana",
