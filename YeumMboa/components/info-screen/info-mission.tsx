@@ -7,7 +7,7 @@ export default function InfoMission(){
         <View>
             <View style={styles.container}>
                 <View style={styles.head}>
-                    <Entypo name="flag" size={24} color="black" />
+                    <Entypo name="flag" style={styles.flag} />
                     <Text style={{fontFamily:'Montserrat-Bold'}}>Notre Mission</Text>
                 </View>
                 <Text style={styles.text}>
@@ -26,6 +26,10 @@ const styles = StyleSheet.create({
         backgroundColor:'white',
         padding:20,
         borderRadius:10,
+    },
+    flag:{
+        color:colors['red'],
+        fontSize:18,
     },
     head:{
         flexDirection:'row',

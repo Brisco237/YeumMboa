@@ -9,12 +9,12 @@ export default function LogiqueQuizVisuel({
     currentQuestionIndex,
     setCurrentQuestionIndex,
     score,setScore,
-    vies,setVies}){
+    vies,setVies,setIsFinished}){
 
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const currentQuestion = quizData[currentQuestionIndex];
 
-    const handleAnswerPress = (selectedChoice) => {
+    /*const handleAnswerPress = (selectedChoice) => {
         setSelectedAnswer(selectedChoice);
         const isCorrect = selectedChoice === currentQuestion.reponse;
     
@@ -29,28 +29,67 @@ export default function LogiqueQuizVisuel({
                 setSelectedAnswer(null);
             }
         }, 1000);
-    };
+    };*/
 
-    let buttonColor = 'white';             
-    if (selectedAnswer !== null) {
-        if (choice === currentQuestion.reponse) {
-            buttonColor = colors['green'];
-        } else if (choice === selectedAnswer && selectedAnswer !== currentQuestion.reponse) {
-            buttonColor = colors['red'];
-        }
+    const handleAnswerPress = (selectedChoice) => {
+  setSelectedAnswer(selectedChoice);
+  const isCorrect = selectedChoice === currentQuestion.reponse;
+
+  if (isCorrect) {
+    setScore(score + 10);
+  } else {
+    const newLives = vies - 1;
+    setVies(newLives);
+
+    if (newLives === 0) {
+      setTimeout(() => {
+        setIsFinished(true);
+      }, 1000);
+      return;
     }
+  }
+
+  setTimeout(() => {
+    if (currentQuestionIndex < quizData.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      setSelectedAnswer(null);
+    } else {
+      setIsFinished(true);
+    }
+  }, 1000);
+};
+
 
     return(
         <View style={styles.container}>
             <Image source={currentQuestion.image}style={styles.image} />
+            <Text style={styles.question}>De qui s'agit il  sur l'image ?</Text>
             <View style={styles.choicesContainer}>
-                {currentQuestion.choix.map((choice, index) => (
-                    <TouchableOpacity key={index} style={[styles.button, {backgroundColor:buttonColor}]}
-                        onPress={() => handleAnswerPress(choice)}
-                        disabled={selectedAnswer !== null}>
-                        <Text style={styles.buttonText}>{choice}</Text>
-                    </TouchableOpacity>
-                ))}
+                {currentQuestion.choix.map((choice, index) => {
+
+                let backgroundColor = 'white';
+                let textColor = 'black';
+
+                if(selectedAnswer !== null) {
+                    if (choice === currentQuestion.reponse) {
+                        backgroundColor = colors['green'];
+                        textColor = 'white';
+                    }
+                    else if (choice === selectedAnswer) {
+                        backgroundColor = colors['red'];
+                        textColor = 'white';
+                    }
+                }
+
+            return (
+                <TouchableOpacity key={index} style={[styles.button, { backgroundColor }]}
+                    onPress={() => handleAnswerPress(choice)}
+                    disabled={selectedAnswer !== null}
+                >
+                    <Text style={[styles.buttonText, { color: textColor }]}>{choice}</Text>
+                </TouchableOpacity>
+                );
+            })}
             </View>
         </View>
     );
@@ -58,7 +97,7 @@ export default function LogiqueQuizVisuel({
 
 const styles = StyleSheet.create({
     container: {
-        marginVertical: 20,
+        marginTop:10,
         alignItems: 'center',
     },
     image: {
@@ -66,6 +105,12 @@ const styles = StyleSheet.create({
         height:250,
         borderRadius:10,
         gap:2,
+    },
+    question:{
+        fontFamily:'Montserrat-Regular',
+        fontSize:18,
+        marginTop:10,
+        alignItems:'center',
     },
     choicesContainer:{
         marginTop:20,
@@ -82,7 +127,6 @@ const styles = StyleSheet.create({
     buttonText: {
         fontSize: 14,
         fontFamily: 'Montserrat-Bold',
-        color: '#333',
         textAlign: 'center',
     },
 });

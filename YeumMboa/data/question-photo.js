@@ -21,4 +21,26 @@ export const quizData = [
       "Castor Ossendé Afana",
     ],
   },
+  {
+    id: 3,
+    image: require("../assets/images/afana.png"),
+    reponse: "Castor Ossendé Afana",
+    choix: [
+      "André Marie Mbida",
+      "John Ngu Foncha",
+      "Ahmadou Ahidjo",
+      "Castor Ossendé Afana",
+    ],
+  },
+  {
+    id: 2,
+    image: require("../assets/images/moumié.png"),
+    reponse: "Felix Roland Moumié",
+    choix: [
+      "Ernest Ouandié",
+      "John Ngu Foncha",
+      "Felix Roland Moumié",
+      "Castor Ossendé Afana",
+    ],
+  },
 ];

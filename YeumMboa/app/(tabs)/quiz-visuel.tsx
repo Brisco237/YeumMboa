@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
 import { useState } from 'react';
 import ArrowLeft from "../../components/arrow-left";
 import Trait from '../../components/trait'; 
@@ -12,6 +12,33 @@ export default function QuizVisuel(){
     const [score, setScore] = useState(0);
     const [vies, setVies] = useState(3);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    const [isFinished, setIsFinished] = useState(false);
+
+    if (isFinished) {
+      return (
+        <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+          <Text style={{ fontSize: 24 }}>Quiz terminé 🎉</Text>
+          <Text style={{ fontSize: 20 }}>Score final : {score}</Text>
+    
+          <TouchableOpacity
+            onPress={() => {
+              setScore(0);
+              setVies(3);
+              setCurrentQuestionIndex(0);
+              setIsFinished(false);
+            }}
+            style={{
+              marginTop: 20,
+              padding: 15,
+              backgroundColor: "black",
+              borderRadius: 10,
+            }}
+          >
+            <Text style={{ color: "white" }}>Rejouer</Text>
+          </TouchableOpacity>
+        </View>
+      );
+    }
     
 
 
@@ -36,6 +63,7 @@ export default function QuizVisuel(){
                         setScore={setScore}
                         vies={vies}
                         setVies={setVies}
+                        setIsFinished={setIsFinished}
                     />
                 </View>
             </ScrollView>
