@@ -6,6 +6,7 @@ import { colors } from '../../theme/color'
 import VieScore from "../../components/quiz-visuel/vie-score";
 import LogiqueQuizVisuel from "../../components/quiz-visuel/logique-quiz-visuel";
 import { quizData } from '../../data/question-photo';
+import PageResultat from "../../components/resultat-page/resultat";
 
 
 export default function QuizVisuel(){
@@ -14,33 +15,22 @@ export default function QuizVisuel(){
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [isFinished, setIsFinished] = useState(false);
 
-    if (isFinished) {
-      return (
-        <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-          <Text style={{ fontSize: 24 }}>Quiz terminé 🎉</Text>
-          <Text style={{ fontSize: 20 }}>Score final : {score}</Text>
-    
-          <TouchableOpacity
-            onPress={() => {
-              setScore(0);
-              setVies(3);
-              setCurrentQuestionIndex(0);
-              setIsFinished(false);
-            }}
-            style={{
-              marginTop: 20,
-              padding: 15,
-              backgroundColor: "black",
-              borderRadius: 10,
-            }}
-          >
-            <Text style={{ color: "white" }}>Rejouer</Text>
-          </TouchableOpacity>
-        </View>
-      );
+    if(isFinished){
+        return(
+            <PageResultat 
+                quizData={quizData}
+                currentQuestionIndex={currentQuestionIndex}
+                setCurrentQuestionIndex={setCurrentQuestionIndex}
+                score={score}
+                setScore={setScore}
+                vies={vies}
+                setVies={setVies}
+                isFinished={isFinished}
+                setIsFinished={setIsFinished}
+            />
+        );
     }
     
-
 
     return(
         <View style={{flex:1}}>
@@ -63,6 +53,7 @@ export default function QuizVisuel(){
                         setScore={setScore}
                         vies={vies}
                         setVies={setVies}
+                        isFinished={isFinished}
                         setIsFinished={setIsFinished}
                     />
                 </View>

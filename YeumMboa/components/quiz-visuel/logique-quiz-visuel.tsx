@@ -9,55 +9,38 @@ export default function LogiqueQuizVisuel({
     currentQuestionIndex,
     setCurrentQuestionIndex,
     score,setScore,
-    vies,setVies,setIsFinished}){
+    vies,setVies,setIsFinished,isFinished}){
 
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const currentQuestion = quizData[currentQuestionIndex];
 
-    /*const handleAnswerPress = (selectedChoice) => {
+    const handleAnswerPress = (selectedChoice) => {
         setSelectedAnswer(selectedChoice);
         const isCorrect = selectedChoice === currentQuestion.reponse;
-    
+
         if (isCorrect) {
-            setScore(score + 5);
+            setScore(score + 10);
         } else {
-            setVies(vies - 1);
+            const newLives = vies - 1;
+            setVies(newLives);
+
+            if (newLives === 0) {
+                setTimeout(() => {
+                setIsFinished(true);
+            }, 1000);
+            return;
         }
-        setTimeout(() => {
-            if (currentQuestionIndex < quizData.length - 1) {
-                setCurrentQuestionIndex(currentQuestionIndex + 1);
-                setSelectedAnswer(null);
-            }
+    }
+
+    setTimeout(() => {
+        if (currentQuestionIndex < quizData.length - 1) {
+            setCurrentQuestionIndex(currentQuestionIndex + 1);
+            setSelectedAnswer(null);
+        } else {
+            setIsFinished(true);
+        }
         }, 1000);
-    };*/
-
-    const handleAnswerPress = (selectedChoice) => {
-  setSelectedAnswer(selectedChoice);
-  const isCorrect = selectedChoice === currentQuestion.reponse;
-
-  if (isCorrect) {
-    setScore(score + 10);
-  } else {
-    const newLives = vies - 1;
-    setVies(newLives);
-
-    if (newLives === 0) {
-      setTimeout(() => {
-        setIsFinished(true);
-      }, 1000);
-      return;
-    }
-  }
-
-  setTimeout(() => {
-    if (currentQuestionIndex < quizData.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setSelectedAnswer(null);
-    } else {
-      setIsFinished(true);
-    }
-  }, 1000);
-};
+    };
 
 
     return(
