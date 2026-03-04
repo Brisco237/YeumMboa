@@ -3,7 +3,7 @@ import Logo from '../../components/logo';
 import Section1 from '../../components/section1';
 import SectionCategory from '../../components/section-category';   
 import Menu from '../../components/menu'     
-import { Entypo } from "@expo/vector-icons";
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import { useFonts } from 'expo-font';
 import Trait from '../../components/trait';
 import { useRouter } from 'expo-router';
@@ -26,7 +26,7 @@ export default function HomeScreen() {
             <View style={styles.header}>
                 <Logo />
                 <TouchableOpacity onPress={() => router.push('/info-screen')}>
-                    <Entypo name="info-with-circle" style={styles.infoicon} />
+                    <FontAwesome5 name="user-cog" style={styles.infoicon} />
                 </TouchableOpacity>
             </View>
             <Trait />
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f8f6f6',
   },
   container: {
-    height:'100%',
+    flex:1,
   },
   header: {
     flexDirection: 'row',
@@ -59,7 +59,5 @@ const styles = StyleSheet.create({
     marginTop :30,
     fontSize: 20,
     marginRight:20,
-    fontWeight: 'bold',
-    color:'gray'
   }, 
 });

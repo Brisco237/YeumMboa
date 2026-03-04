@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         marginBottom:15,
     },
     iconmenu:{
-        color:'gray',
+        color:'black',
         fontSize:25,
         marginBottom:5,
     },   

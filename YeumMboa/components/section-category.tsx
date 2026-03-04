@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     img:{
         color: colors["red"],
         marginTop:10,
-        fontSize: 30,
+        fontSize:18,
         borderRadius:5,
         justifyContent:'center',
         padding:10,
@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     globe:{
         color: colors["green"],
         marginTop:10,
-        fontSize:30,
+        fontSize:18,
         borderRadius:5,
         justifyContent:'center',
         padding:10,
@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     localisation:{
         color: colors["yellow"],
         marginTop:10,
-        fontSize:30,
+        fontSize:18,
         borderRadius:5,
         justifyContent:'center',
         padding:10,
@@ -114,19 +114,19 @@ const styles = StyleSheet.create({
     museum:{
         color: "gray",
         marginTop:10,
-        fontSize:30,
+        fontSize:18,
         borderRadius:5,
         justifyContent:'center',
         padding:10,
     },
     /* random category */
     randomcategory:{
-        marginTop:10,
+        marginTop:5,
         marginLeft:10,
         marginRight:10,
         padding:20,
         borderRadius:7,
-        backgroundColor:colors["yellow"],
+        backgroundColor:"white",
         alignItems:'center',
     },
     randomtitle:{
@@ -139,11 +139,11 @@ const styles = StyleSheet.create({
         fontFamily:"PlusJakartaSans-Regular",
     },
     iconrandom:{
-        color:'gray',
+        color:colors['green'],
         marginBottom:10,
         padding:10,
-        fontSize:30,
-        backgroundColor:'white',
+        fontSize:18,
+        backgroundColor:colors['s-green'],
         borderRadius:10,
     },
 });
