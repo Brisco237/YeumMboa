@@ -91,12 +91,13 @@ const styles = StyleSheet.create({
     title:{
         marginTop:20,
         fontFamily:'Montserrat-Bold',
-        fontSize:15,
+        fontSize:14,
     },
     textdes:{
-        fontSize:14,
+        fontSize:12,
         fontFamily:'Montserrat-Regular',
         marginTop:10,
+
     },
     boxfoot:{
         flexDirection:'row',
@@ -120,7 +121,7 @@ const styles = StyleSheet.create({
     demarrer:{
         color:'white',
         fontFamily:'Montserrat-Bold',
-        fontSize:12,
+        fontSize:10,
     },
     level:{
         fontFamily:'Montserrat-Bold',

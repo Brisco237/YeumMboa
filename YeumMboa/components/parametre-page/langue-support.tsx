@@ -27,9 +27,9 @@ export default function LangueSupport() {
             </View>
             <Text style={styles.title2}>Support</Text>
             <View style={styles.buttonsupport}>
-                <TouchableOpacity onPress={()=>{}} style={{flexDirection:'row',gap:10}}>
-                    <FontAwesome name="envelope-o" size={20} color="black" />
-                    <Text style={styles.textsupport}>Contacter le support</Text>
+                <TouchableOpacity onPress={()=>{}} style={{flexDirection:'row',gap:10, alignItems:'center'}}>
+                  <FontAwesome name="envelope-o" size={20} color="black" />
+                  <Text style={styles.textsupport}>Contacter le support</Text>
                 </TouchableOpacity>
                 <Fontisto name="arrow-right" size={12} color="gray" />
             </View>
@@ -48,14 +48,14 @@ const styles = StyleSheet.create({
   },
   title1:{
     fontFamily:'PlusJakartaSans-Bold',
-    fontSize: 18,
+    fontSize:14,
     marginLeft:15,
     color:'black',
   },
   title2:{
     marginTop:30,
     fontFamily:'PlusJakartaSans-Bold',
-    fontSize: 18,
+    fontSize:14,
     marginLeft:15,
     color:'black',
   },
@@ -83,12 +83,13 @@ const styles = StyleSheet.create({
     marginTop:20,
     marginLeft:15,
     backgroundColor:'white',
-    padding:25,
+    padding:15,
     borderRadius:10,
     marginRight:20,
     marginBottom:30,
     flexDirection:'row',
     justifyContent:'space-between',
+    alignItems:'center'
   },
   textsupport:{
     fontFamily:'PlusJakartaSans-Regular',
@@ -98,17 +99,17 @@ const styles = StyleSheet.create({
   },
   infosupport:{
     alignItems:'center',
-    marginTop:20,
+    marginBottom:30,
   },
   emailsupport:{
     fontFamily:'PlusJakartaSans-Regular',
     color:'gray',
-    fontSize:16,
+    fontSize:12,
   }, 
   versionapp:{
     marginTop:10,
     fontFamily:'PlusJakartaSans-Regular',
     color:'gray',
-    fontSize:16,
+    fontSize:12,
   }
 });

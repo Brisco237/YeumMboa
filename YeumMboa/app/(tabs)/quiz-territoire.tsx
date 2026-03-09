@@ -9,7 +9,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function QuizTerritoire(){
     return (
-        <View style={{flex:1}}>
+        <SafeAreaView style={{flex:1}}>
             <View style={styles.header}>
                 <View style={styles.line}>
                     <Text style={{marginTop:7}}><ArrowLeft /></Text>
@@ -26,7 +26,7 @@ export default function QuizTerritoire(){
                     <ChoixQuiz />
                 </View>
             </ScrollView>
-        </View>
+        </SafeAreaView>
     );
 }
 
@@ -50,12 +50,13 @@ const styles = StyleSheet.create({
   title1:{
     marginTop:20,
     fontFamily:'Montserrat-Bold',
-    fontSize:20,
+    fontSize:16,
   },
   text:{
     fontFamily:'Montserrat-Regular',
     marginTop:10,
     marginBottom:15,
+    fontSize:12
   }
 
 });

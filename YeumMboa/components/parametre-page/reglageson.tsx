@@ -84,19 +84,20 @@ const styles = StyleSheet.create({
   },
   titleson:{
     fontFamily:'PlusJakartaSans-Bold',
-    fontSize: 18,
+    fontSize:14,
     marginLeft:15,
     color:'black',
   },
   son1:{
-    marginTop:15,
-    padding:15,
+    marginTop:10,
+    padding:10,
     flexDirection:'row',
     justifyContent:'space-between',
+    alignItems:'center'
   },
   containerson:{
     backgroundColor:'white',
-    padding:10,
+    padding:5,
     borderRadius:10,
     marginTop:20,
     marginLeft:20,
@@ -104,18 +105,19 @@ const styles = StyleSheet.create({
   },
   musique:{
     flexDirection:'row',
-    gap:15,
+    gap:10,
+    alignItems:'center'
   },
   iconson:{
-    fontSize: 20,
-    color: colors['green'],
+    fontSize:14,
+    color:colors['green'],
     backgroundColor:'#c6eec0',
     padding:10,
     borderRadius:5,
   },
   textson:{
     fontFamily:'PlusJakartaSans-Regular',
-    fontSize: 16,
+    fontSize:12,
     marginTop:10,
   },
   switch:{
@@ -123,7 +125,7 @@ const styles = StyleSheet.create({
   },
   iconson2:{
     color:'white',
-    fontSize: 20,
+    fontSize:14,
     backgroundColor:colors['yellow'],
     padding:10,
     borderRadius:5,
