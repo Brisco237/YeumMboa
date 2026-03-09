@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   line:{
     flexDirection:'row',
     gap:30,
-    marginLeft:10,
+    marginLeft:20,
     marginTop:15
   },
   title: {

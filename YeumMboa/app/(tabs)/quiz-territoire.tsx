@@ -11,11 +11,11 @@ export default function QuizTerritoire(){
     return (
         <SafeAreaView style={{flex:1}}>
             <View style={styles.header}>
-                <View style={styles.line}>
-                  <Text><ArrowLeft /></Text>
-                  <Text style={styles.title}>Quiz Territoire</Text>
-                </View>
-                <Trait />
+              <View style={styles.line}>
+                <Text><ArrowLeft /></Text>
+                <Text style={styles.title}>Quiz Territoire</Text>
+              </View>
+              <Trait />
             </View>
             <ScrollView>
                 <View style={styles.container}>
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     marginTop:15,
     flexDirection:'row',
     gap:30,
-    marginLeft:10,
+    marginLeft:20,
     alignItems:'center'
   },
   title1:{

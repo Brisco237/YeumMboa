@@ -16,7 +16,8 @@ export default function VieScore({vies,score}){
                 </View>
                 <View style={styles.score}>
                     <Text style={styles.scoretext}>Score : </Text>
-                    <Text style={styles.point}>{score} Points</Text>
+                    <Text style={styles.scoretext}>{score}</Text>
+                    <Text style={styles.point}>Points</Text>
                 </View>
             </View>
         </View>
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
     },
     heart:{
         color:colors['red'],
-        fontSize:14,
+        fontSize:18,
     },
     /* Score */
     score:{
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
         fontSize:14,
     },
     point:{
-        fontFamily:'Montserrat-Bold',
-        fontSize:14,
+        fontFamily:'PlusJakartaSans-Bold',
+        fontSize:15,
     }
 });

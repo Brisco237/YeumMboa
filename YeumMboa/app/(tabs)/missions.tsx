@@ -6,13 +6,17 @@ import Trait from '../../components/trait'
 import Banniere1 from '../../components/missions-page/banniere1'; 
 import ParcoursProgression from '@/components/missions-page/parcours-progression';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import ArrowLeft from '../../components/arrow-left';
 
 
 export default function MissionsScreen() {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.containersafe}>
       <View style={styles.header}>
-        <Text style={styles.title}>Missions</Text>
+        <View style={styles.line}>
+          <Text><ArrowLeft /></Text>
+          <Text style={styles.title}>Mes Missions</Text>
+        </View>
         <Trait />
       </View>
       <ScrollView>
@@ -26,17 +30,25 @@ export default function MissionsScreen() {
 }
 
 const styles = StyleSheet.create({
+  containersafe:{
+    flex:1,
+  },
+  line:{
+    flexDirection:'row',
+    gap:30,
+    alignItems:'center',
+    marginTop:15,
+    marginLeft:20
+  },
   container: {
     backgroundColor:colors['background-light'],
     marginHorizontal:20,
   },
   header:{
     backgroundColor:'white',
-    alignItems:'center',
   },
   title:{
     fontFamily:'Montserrat-Bold',
     fontSize:20,
-    marginTop:20,
   }
 });
