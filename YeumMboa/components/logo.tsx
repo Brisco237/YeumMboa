@@ -6,7 +6,7 @@ export default function Logo() {
     return (
       <View style={styles.homesection}>
         <View style={styles.logo}>
-        <FontAwesome5 name="globe-africa" style={styles.globe} />
+          <FontAwesome5 name="globe-africa" style={styles.globe} />
           <Text>
             <Text style={styles.title}>YeumMboa</Text>
             {"\n"}
@@ -19,17 +19,17 @@ export default function Logo() {
 
 const styles = StyleSheet.create({
   title : {
-    fontSize:20,
+    fontSize:18,
     color: colors["red"],
     fontFamily: 'Montserrat-Bold',
   },
   globe: {
     marginRight:8,
-    borderRadius: 10,
-    padding: 10,
+    borderRadius:10,
+    padding:10,
     backgroundColor:colors["red"],
-    color: 'white',
-    fontSize:30,
+    color:'white',
+    fontSize:20,
   },
   homesection: {
     marginTop:20,
@@ -37,12 +37,11 @@ const styles = StyleSheet.create({
   logo: {
     flexDirection: "row",
     justifyContent: "flex-start",
-    marginLeft:15,
-    paddingRight: 10,
+    marginLeft:10,
   },
   subtitle: {
     color:colors["green"],
-    fontSize: 11,
+    fontSize:10,
     fontFamily: 'Montserrat-Bold',
   },
 });

@@ -56,7 +56,7 @@ export default function SectionCategory() {
 
 const styles = StyleSheet.create({
     container:{
-        marginTop:10,
+        marginTop:20,
     },
     title:{
         fontSize:20,
