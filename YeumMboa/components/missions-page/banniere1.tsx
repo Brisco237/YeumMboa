@@ -20,7 +20,7 @@ export default function Banniere1(){
             </Text>
             <View style={styles.start}>
                 <FontAwesome6 name="hourglass-start" size={16} color="white" />
-                <Text style={{color:'white', fontFamily:'PlusJakartaSans-Bold'}}>Commercez le Quiz</Text>
+                <Text style={{color:'white', fontFamily:'PlusJakartaSans-Bold'}}>Commencez le Quiz</Text>
             </View>
         </View>
 

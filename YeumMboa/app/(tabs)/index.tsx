@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   },
   infoicon :{
     marginTop :30,
-    fontSize: 20,
+    fontSize:18,
     marginRight:20,
   }, 
 });

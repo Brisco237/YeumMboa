@@ -7,13 +7,13 @@ export default function Equipe(){
             <Text style={styles.title}>Equipe de developpement</Text>
             <View style={styles.box1}>
                 <View style={styles.p1}>
-                    <Image source={require('../../assets/images/profile1.png')}
+                    <Image source={require('../../assets/images/profile.png')}
                     style={styles.image}></Image>
                     <Text style={styles.nom}>Kamdem Brice</Text>
                     <Text style={styles.role}>Developpeur</Text>
                 </View>
                 <View style={styles.p1}>
-                    <Image source={require('../../assets/images/profile1.png')}
+                    <Image source={require('../../assets/images/moumié.png')}
                     style={styles.image}></Image>
                     <Text style={styles.nom}>Ngoh Emmanuel</Text>
                     <Text style={styles.role}>Historien</Text>
@@ -22,13 +22,13 @@ export default function Equipe(){
 
             <View style={styles.box2}>
                 <View style={styles.p1}>
-                    <Image source={require('../../assets/images/profile1.png')}
+                    <Image source={require('../../assets/images/ouandié.png')}
                     style={styles.image}></Image>
                     <Text style={styles.nom}>Kamdem Brice</Text>
                     <Text style={styles.role}>Developpeur</Text>
                 </View>
                 <View style={styles.p1}>
-                    <Image source={require('../../assets/images/profile1.png')}
+                    <Image source={require('../../assets/images/um.png')}
                     style={styles.image}></Image>
                     <Text style={styles.nom}>Ngoh Emmanuel</Text>
                     <Text style={styles.role}>Historien</Text>

@@ -141,9 +141,6 @@ const styles = StyleSheet.create({
     iconrandom:{
         color:colors['green'],
         marginBottom:10,
-        padding:10,
         fontSize:18,
-        backgroundColor:colors['s-green'],
-        borderRadius:10,
     },
 });

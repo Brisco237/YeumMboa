@@ -58,8 +58,8 @@ const styles = StyleSheet.create({
     },
     iconmenu:{
         color:'black',
-        fontSize:25,
         marginBottom:5,
+        fontSize:18
     },   
     iconenom:{
         fontFamily:'Montserrat-Bold',
