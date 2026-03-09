@@ -6,27 +6,28 @@ import {colors} from '../../theme/color';
 import InfoMission from '../../components/info-screen/info-mission';
 import Equipe from '../../components/info-screen/equipe';
 import ReferenceInfo from '../../components/info-screen/reference-infos';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 export default function InfoSreen(){
     return(
-        <View style={styles.container}>
-            <View style={styles.header}>
-                <View style={styles.line}>
-                    <Text style={{marginTop:7}}><ArrowLeft /></Text>
-                    <Text style={styles.title}>À propos de l'application</Text>
-                </View>
-                <Trait />
-            </View>
-            <ScrollView showsVerticalScrollIndicator={false}>
-                <View style={{marginHorizontal:20}}>
-                    <View style={{alignItems:'center',marginVertical:15}}><Logo/></View>
-                    <View><InfoMission /></View>
-                    <View><Equipe /></View>
-                    <View><ReferenceInfo /></View>
-                </View>
-            </ScrollView>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.header}>
+          <View style={styles.line}>
+            <Text style={{marginTop:7}}><ArrowLeft /></Text>
+            <Text style={styles.title}>À propos de l'application</Text>
+          </View>
+          <Trait />
         </View>
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <View style={{marginHorizontal:20}}>
+            <View style={{alignItems:'center',marginVertical:15}}><Logo/></View>
+              <View><InfoMission /></View>
+              <View><Equipe /></View>
+              <View><ReferenceInfo /></View>
+          </View>
+        </ScrollView>
+      </SafeAreaView>
     );
 }
 

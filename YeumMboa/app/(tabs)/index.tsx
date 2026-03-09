@@ -7,7 +7,7 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import { useFonts } from 'expo-font';
 import Trait from '../../components/trait';
 import { useRouter } from 'expo-router';
-/*import { SafeAreaView } from 'react-native'*/
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 export default function HomeScreen() {
@@ -23,7 +23,7 @@ export default function HomeScreen() {
         return null; 
     }
     return (
-        <View style={styles.container}>
+        <SafeAreaView  style={styles.container}>
             <View style={styles.header}>
                 <Logo />
                 <TouchableOpacity onPress={() => router.push('/info-screen')}>
@@ -41,7 +41,7 @@ export default function HomeScreen() {
             <View>
                 <Menu />
             </View>
-        </View>
+        </SafeAreaView >
     );
 }
 

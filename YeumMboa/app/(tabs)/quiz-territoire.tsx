@@ -4,6 +4,7 @@ import ArrowLeft from "../../components/arrow-left";
 import Trait from '../../components/trait'; 
 import { colors } from '../../theme/color'
 import ChoixQuiz from "@/components/quiz-territoire/choix-quiz";  
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 export default function QuizTerritoire(){

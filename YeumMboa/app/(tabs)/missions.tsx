@@ -5,11 +5,12 @@ import { colors } from '../../theme/color';
 import Trait from '../../components/trait'
 import Banniere1 from '../../components/missions-page/banniere1'; 
 import ParcoursProgression from '@/components/missions-page/parcours-progression';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 export default function MissionsScreen() {
   return (
-    <View>
+    <SafeAreaView>
       <View style={styles.header}>
         <Text style={styles.title}>Missions</Text>
         <Trait />
@@ -20,7 +21,7 @@ export default function MissionsScreen() {
           <ParcoursProgression />
         </View>
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 }
 

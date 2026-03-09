@@ -5,6 +5,7 @@ import Entypo from '@expo/vector-icons/Entypo';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { useRouter } from 'expo-router';
 import Fontisto from '@expo/vector-icons/Fontisto';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function PageResultat({currentQuestionIndex,
     setCurrentQuestionIndex,

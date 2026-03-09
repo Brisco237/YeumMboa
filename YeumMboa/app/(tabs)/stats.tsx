@@ -6,13 +6,14 @@ import { useRouter } from 'expo-router';
 import Banniere from '../../components/stats-page/banniere';  
 import BestScore from '../../components/stats-page/bestscore';
 import ArrowLeft from '../../components/arrow-left';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 export default function StatsScreen() {
   const router = useRouter();
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
         <View style={styles.header}>
           <ArrowLeft />
           <Text style={styles.title}>Statistiques</Text>
@@ -22,7 +23,7 @@ export default function StatsScreen() {
           <Banniere />
           <BestScore />
         </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 }
 

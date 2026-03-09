@@ -7,6 +7,7 @@ import VieScore from "../../components/quiz-visuel/vie-score";
 import LogiqueQuizVisuel from "../../components/quiz-visuel/logique-quiz-visuel";
 import { quizData } from '../../data/question-photo';
 import PageResultat from "./resultat";
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 export default function QuizVisuel(){
@@ -33,7 +34,7 @@ export default function QuizVisuel(){
     
 
     return(
-        <View style={{flex:1}}>
+        <SafeAreaView style={{flex:1}}>
             <View style={styles.header}>
                 <View style={styles.line}>
                     <Text style={{marginTop:7}}><ArrowLeft /></Text>
@@ -58,7 +59,7 @@ export default function QuizVisuel(){
                     />
                 </View>
             </ScrollView>
-        </View>
+        </SafeAreaView>
 
     );
 }

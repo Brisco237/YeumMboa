@@ -7,12 +7,13 @@ import ReglageSon from '../../components/parametre-page/reglageson';
 import {colors} from '../../theme/color';
 import LangueSupport from '../../components/parametre-page/langue-support'; 
 import ArrowLeft from '../../components/arrow-left';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 export default function SettingsScreen() {
   const router = useRouter();
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <ArrowLeft />
         <Text style={styles.title}>Paramètres</Text>
@@ -29,7 +30,7 @@ export default function SettingsScreen() {
           <LangueSupport />
         </View>
       </ScrollView>
-    </View>
+    </SafeAreaView>
   );
 }
 
