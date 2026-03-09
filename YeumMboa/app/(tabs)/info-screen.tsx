@@ -18,7 +18,7 @@ export default function InfoSreen(){
                 </View>
                 <Trait />
             </View>
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={{marginHorizontal:20}}>
                     <View style={{alignItems:'center',marginVertical:15}}><Logo/></View>
                     <View><InfoMission /></View>

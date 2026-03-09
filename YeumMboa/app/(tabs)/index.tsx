@@ -31,7 +31,7 @@ export default function HomeScreen() {
                 </TouchableOpacity>
             </View>
             <Trait />
-            <ScrollView>
+            <ScrollView  showsVerticalScrollIndicator={false}>
                 <View style={styles.containercolor}>
                     <Section1 />
                     <SectionCategory />

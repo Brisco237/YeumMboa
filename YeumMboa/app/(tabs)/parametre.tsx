@@ -18,7 +18,7 @@ export default function SettingsScreen() {
         <Text style={styles.title}>Paramètres</Text>
       </View>
       <Trait />
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.logo} >
           <Logo />
         </View>
