@@ -7,6 +7,7 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import { useFonts } from 'expo-font';
 import Trait from '../../components/trait';
 import { useRouter } from 'expo-router';
+/*import { SafeAreaView } from 'react-native'*/
 
 
 export default function HomeScreen() {

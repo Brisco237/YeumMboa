@@ -9,7 +9,7 @@ export default function Logo() {
         <FontAwesome5 name="globe-africa" style={styles.globe} />
           <Text>
             <Text style={styles.title}>YeumMboa</Text>
-            <br/>
+            {"\n"}
             <Text style={styles.subtitle}>Découvre le Cameroun</Text>
           </Text>
         </View>

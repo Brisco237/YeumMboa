@@ -20,7 +20,7 @@ export default function Section1() {
 
 const styles = StyleSheet.create({
     section: {
-        marginTop:20,
+        marginTop:15,
         marginLeft: 16,
         marginRight: 16,
         backgroundColor: colors["green"],
@@ -30,12 +30,13 @@ const styles = StyleSheet.create({
     sectionTitle: {
         fontFamily:'PlusJakartaSans-bold',
         color:'#fff',
-        fontSize: 24,
+        fontSize: 20,
+        fontWeight:'bold'
     },
     sectionDescription: {
         color:'#fff',
         marginTop: 16,
-        fontSize: 16,
+        fontSize: 12,
         fontFamily: 'PlusJakartaSans-Regular',
         lineHeight: 24,
     },

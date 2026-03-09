@@ -6,7 +6,7 @@ import { colors } from '../../theme/color'
 import VieScore from "../../components/quiz-visuel/vie-score";
 import LogiqueQuizVisuel from "../../components/quiz-visuel/logique-quiz-visuel";
 import { quizData } from '../../data/question-photo';
-import PageResultat from "../../components/resultat-page/resultat";
+import PageResultat from "./resultat";
 
 
 export default function QuizVisuel(){

@@ -15,9 +15,10 @@ export default function ArrowLeft() {
 
 const styles = StyleSheet.create({
   arrowleft:{
-    fontSize:18,
+    fontSize:16,
     backgroundColor:'#f3eaea',
-    borderRadius:'50%',
+    justifyContent:'center',
+    borderRadius:8,
     padding:10,
     marginTop:5,
   },

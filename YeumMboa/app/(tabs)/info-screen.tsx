@@ -38,8 +38,9 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily:'Montserrat-Bold',
-    fontSize: 20,
+    fontSize:20,
     marginTop:20,
+    fontWeight:'bold'
   },
   header: {
     backgroundColor:'white',
@@ -48,6 +49,7 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     gap:30,
     marginLeft:10,
+    alignItems:'center'
   },
 
 });

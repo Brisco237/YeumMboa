@@ -30,7 +30,7 @@ export default function SectionCategory() {
                 </TouchableOpacity>
             </View>
 
-            <View style={styles.box}>
+            <View style={styles.box2}>
                 <View style={styles.theme}>
                     <FontAwesome6 name="location-dot" style={styles.localisation} />
                     <Text style={styles.themename}>Lieux de mémoire</Text>
@@ -56,7 +56,7 @@ export default function SectionCategory() {
 
 const styles = StyleSheet.create({
     container:{
-        marginTop:40,
+        marginTop:10,
     },
     title:{
         fontSize:20,
@@ -65,7 +65,14 @@ const styles = StyleSheet.create({
         marginBottom:25,
     },
     box:{
-        marginTop:7,
+        marginTop:0,
+        flexDirection:'row',
+        gap:5,
+        marginLeft:10,
+        marginRight:10,
+    },
+    box2:{
+        marginTop:3,
         flexDirection:'row',
         gap:5,
         marginLeft:10,

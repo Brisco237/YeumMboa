@@ -20,41 +20,41 @@ export default function BestScore(){
                 <View style={styles.cat1}>
                     <View style={styles.logotitre}>
                         <FontAwesome5 name="globe-africa" style={styles.globe} />
-                        <Text style={styles.text}>Territoire <br/> Géo & Localisation</Text>
+                        <Text style={styles.text}>Territoire {"\n"} Géo & Localisation</Text>
                     </View>
-                    <Text style={styles.score}>3400 <br/> Points</Text>
+                    <Text style={styles.score}>3400 {"\n"} Points</Text>
                 </View>
 
                 <View style={styles.cat1}>
                     <View style={styles.logotitre}>
                         <FontAwesome name="image" style={styles.img} />
-                        <Text style={styles.text}>Iconographie <br/> Quiz visuel</Text>
+                        <Text style={styles.text}>Iconographie {"\n"} Quiz visuel</Text>
                     </View>
-                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:colors['red']}}>3400 <br/> Points</Text>
+                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:colors['red']}}>3400 {"\n"} Points</Text>
                 </View>
 
                 <View style={styles.cat1}>
                     <View style={styles.logotitre}>
                         <FontAwesome6 name="location-dot" style={styles.localisation} />
-                        <Text style={styles.text}>Lieux de mémoire <br/> Indications sur carte</Text>
+                        <Text style={styles.text}>Lieux de mémoire {"\n"}Indications sur carte</Text>
                     </View>
-                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:colors['yellow']}}>20562 <br/> Points</Text>
+                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:colors['yellow']}}>20562 {"\n"} Points</Text>
                 </View>
 
                 <View style={styles.cat1}>
                     <View style={styles.logotitre}>
                         <FontAwesome name="bank" style={styles.museum} />
-                        <Text style={styles.text}>Sites Archéos <br/> Vestiges & Fouilles</Text>
+                        <Text style={styles.text}>Sites Archéos {"\n"} Vestiges & Fouilles</Text>
                     </View>
-                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:'gray'}}>3400 <br/> Points</Text>
+                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:'gray'}}>3400 {"\n"} Points</Text>
                 </View>
 
                 <View style={styles.cat1}>
                     <View style={styles.logotitre}>
                         <FontAwesome5 name="random" style={styles.iconrandom} />
-                        <Text style={styles.text}>Quiz Aléatoire <br/> Toutes les catégories</Text>
+                        <Text style={styles.text}>Quiz Aléatoire {"\n"} Toutes les catégories</Text>
                     </View>
-                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:'gray'}}>3400 <br/> Points</Text>
+                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:'gray'}}>3400 {"\n"} Points</Text>
                 </View>
             </View>
         </View>

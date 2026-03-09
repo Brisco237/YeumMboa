@@ -4,18 +4,18 @@ import {colors} from '../../theme/color';
 export default function Equipe(){
     return(
         <View>
-            <Text style={styles.title}>Equipe de developpement</Text>
+            <Text style={styles.title}>Equipe de conception</Text>
             <View style={styles.box1}>
                 <View style={styles.p1}>
                     <Image source={require('../../assets/images/profile.png')}
                     style={styles.image}></Image>
                     <Text style={styles.nom}>Kamdem Brice</Text>
-                    <Text style={styles.role}>Developpeur</Text>
+                    <Text style={styles.role}>Dev & Historien</Text>
                 </View>
                 <View style={styles.p1}>
                     <Image source={require('../../assets/images/moumié.png')}
                     style={styles.image}></Image>
-                    <Text style={styles.nom}>Ngoh Emmanuel</Text>
+                    <Text style={styles.nom}>Moumié Felix</Text>
                     <Text style={styles.role}>Historien</Text>
                 </View>
             </View>
@@ -24,13 +24,13 @@ export default function Equipe(){
                 <View style={styles.p1}>
                     <Image source={require('../../assets/images/ouandié.png')}
                     style={styles.image}></Image>
-                    <Text style={styles.nom}>Kamdem Brice</Text>
-                    <Text style={styles.role}>Developpeur</Text>
+                    <Text style={styles.nom}>Ernest Ouandié</Text>
+                    <Text style={styles.role}>Historien</Text>
                 </View>
                 <View style={styles.p1}>
                     <Image source={require('../../assets/images/um.png')}
                     style={styles.image}></Image>
-                    <Text style={styles.nom}>Ngoh Emmanuel</Text>
+                    <Text style={styles.nom}>Ruben Um</Text>
                     <Text style={styles.role}>Historien</Text>
                 </View>
             </View>
@@ -62,9 +62,9 @@ const styles = StyleSheet.create({
        alignItems:'center'
     },
     image:{
-        width:50,
-        height:50,
-        borderRadius:'50%',
+        width:70,
+        height:70,
+        borderRadius:50,
         marginBottom:10,
     },
     nom:{
