@@ -30,7 +30,7 @@ export default function BestScore(){
                         <FontAwesome name="image" style={styles.img} />
                         <Text style={styles.text}>Iconographie {"\n"} Quiz visuel</Text>
                     </View>
-                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:colors['red']}}>3400 {"\n"} Points</Text>
+                    <Text style={{fontFamily:'PlusJakartaSans-Bold',color:colors['red'],fontSize:12}}>3400 {"\n"} Points</Text>
                 </View>
 
                 <View style={styles.cat1}>
@@ -38,7 +38,7 @@ export default function BestScore(){
                         <FontAwesome6 name="location-dot" style={styles.localisation} />
                         <Text style={styles.text}>Lieux de mémoire {"\n"}Indications sur carte</Text>
                     </View>
-                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:colors['yellow']}}>20562 {"\n"} Points</Text>
+                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:colors['yellow'],fontSize:12}}>20562 {"\n"} Points</Text>
                 </View>
 
                 <View style={styles.cat1}>
@@ -46,7 +46,7 @@ export default function BestScore(){
                         <FontAwesome name="bank" style={styles.museum} />
                         <Text style={styles.text}>Sites Archéos {"\n"} Vestiges & Fouilles</Text>
                     </View>
-                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:'gray'}}>3400 {"\n"} Points</Text>
+                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:'gray',fontSize:12}}>3400 {"\n"} Points</Text>
                 </View>
 
                 <View style={styles.cat1}>
@@ -54,7 +54,7 @@ export default function BestScore(){
                         <FontAwesome5 name="random" style={styles.iconrandom} />
                         <Text style={styles.text}>Quiz Aléatoire {"\n"} Toutes les catégories</Text>
                     </View>
-                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:'gray'}}>3400 {"\n"} Points</Text>
+                    <Text style={{fontFamily:'PlusJakartaSans-Bold', color:'gray',fontSize:12}}>3400 {"\n"} Points</Text>
                 </View>
             </View>
         </View>
@@ -72,48 +72,48 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         justifyContent:'space-between',
         alignItems:'center',
-        marginBottom:20,
+        marginBottom:10,
     },
     content:{
-        marginTop:25,
+        marginTop:2,
     },
     cat1:{
         flexDirection:'row',
         justifyContent:'space-between',
         alignItems:'center',
         backgroundColor:'white',
-        padding:20,
+        padding:15,
         borderRadius:10,
-        marginVertical:10,
+        marginVertical:2,
     },
     text:{
         fontFamily:'PlusJakartaSans-Bold',
-        fontSize:14,
-        
+        fontSize:12,      
     },
     globe:{
-        fontSize:30,
+        fontSize:15,
         color:colors['green'],
     },
     img:{
         color: colors["red"],
-        fontSize: 30,
+        fontSize:15,
     },
     localisation:{
         color: colors["yellow"],
-        fontSize:30,
+        fontSize:15,
     },
     museum:{
         color: "gray",
-        fontSize:30,
+        fontSize:15,
     },
     iconrandom:{
         color:'gray',
-        fontSize:30,
+        fontSize:15,
     },
     score:{
         fontFamily:'PlusJakartaSans-Bold',
         color:colors['green'],
+        fontSize:12
     },
     logotitre:{
         flexDirection:'row',

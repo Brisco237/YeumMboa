@@ -17,8 +17,8 @@ export default function StatsScreen() {
           <ArrowLeft />
           <Text style={styles.title}>Statistiques</Text>
         </View>
+        <Trait />
         <ScrollView showsVerticalScrollIndicator={false}>
-          <Trait />
           <Banniere />
           <BestScore />
         </ScrollView>
