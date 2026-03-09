@@ -25,7 +25,7 @@ export default function VieScore({vies,score}){
 
 const styles = StyleSheet.create({
     container:{
-        marginTop:10,
+        marginTop:15,
         flexDirection:'row',
         justifyContent:'space-between',
         alignItems:'center'

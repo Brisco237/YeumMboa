@@ -12,8 +12,8 @@ export default function QuizTerritoire(){
         <SafeAreaView style={{flex:1}}>
             <View style={styles.header}>
                 <View style={styles.line}>
-                    <Text style={{marginTop:7}}><ArrowLeft /></Text>
-                    <Text style={styles.title}>Quiz Territoire</Text>
+                  <Text><ArrowLeft /></Text>
+                  <Text style={styles.title}>Quiz Territoire</Text>
                 </View>
                 <Trait />
             </View>
@@ -40,12 +40,13 @@ const styles = StyleSheet.create({
   title: {
     fontFamily:'Montserrat-Bold',
     fontSize: 20,
-    marginTop:20,
   },
   line:{
+    marginTop:15,
     flexDirection:'row',
-    gap:50,
+    gap:30,
     marginLeft:10,
+    alignItems:'center'
   },
   title1:{
     marginTop:20,

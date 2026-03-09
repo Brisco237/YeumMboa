@@ -37,7 +37,7 @@ export default function QuizVisuel(){
         <SafeAreaView style={{flex:1}}>
             <View style={styles.header}>
                 <View style={styles.line}>
-                    <Text style={{marginTop:7}}><ArrowLeft /></Text>
+                    <Text><ArrowLeft /></Text>
                     <Text style={styles.title}>Quiz Iconographique</Text>
                 </View>
                 <Trait />
@@ -73,13 +73,13 @@ const styles = StyleSheet.create({
   },
   line:{
     flexDirection:'row',
-    gap:50,
+    gap:30,
     marginLeft:10,
+    marginTop:15
   },
   title: {
     fontFamily:'Montserrat-Bold',
     fontSize: 20,
     fontWeight: 'bold',
-    marginTop:20,
   },
 });

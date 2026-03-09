@@ -14,7 +14,7 @@ export default function InfoSreen(){
       <SafeAreaView style={styles.container}>
         <View style={styles.header}>
           <View style={styles.line}>
-            <Text style={{marginTop:7}}><ArrowLeft /></Text>
+            <Text><ArrowLeft /></Text>
             <Text style={styles.title}>À propos de l'application</Text>
           </View>
           <Trait />
@@ -40,7 +40,6 @@ const styles = StyleSheet.create({
   title: {
     fontFamily:'Montserrat-Bold',
     fontSize:20,
-    marginTop:20,
     fontWeight:'bold'
   },
   header: {
@@ -50,7 +49,9 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     gap:30,
     marginLeft:10,
-    alignItems:'center'
+    alignItems:'center',
+    marginTop:15,
+    marginBottom:1
   },
 
 });

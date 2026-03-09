@@ -80,7 +80,7 @@ export default function LogiqueQuizVisuel({
 
 const styles = StyleSheet.create({
     container: {
-        marginTop:10,
+        marginTop:15,
         alignItems: 'center',
     },
     image: {
@@ -90,9 +90,9 @@ const styles = StyleSheet.create({
         gap:2,
     },
     question:{
-        fontFamily:'Montserrat-Regular',
+        fontFamily:'PlusJakartaSans-Regular',
         fontSize:18,
-        marginTop:10,
+        marginTop:15,
         alignItems:'center',
     },
     choicesContainer:{

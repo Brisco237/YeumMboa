@@ -15,12 +15,12 @@ export default function PageResultat({currentQuestionIndex,
     const router = useRouter();
 
     return(
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
             <View style={styles.trophé}>
                 <AntDesign name="trophy" style={styles.logotrophé} />
             </View>
             <View style={styles.scorefinal}>
-                <Text style={styles.text}>votre score final</Text>
+                <Text style={styles.text}>VOTRE SCORE FINAL</Text>
                 <Text style={styles.score}>{score}</Text>
                 <Text style={styles.message}>Message de fin !!!</Text>
             </View>
@@ -71,7 +71,7 @@ export default function PageResultat({currentQuestionIndex,
                     <Text style={styles.text3}>Home</Text>
                 </View>
             </TouchableOpacity>
-        </View>
+        </SafeAreaView>
     );
 }
 
@@ -96,13 +96,11 @@ const styles = StyleSheet.create({
     },
     text:{
         fontFamily:'Montserrat-Bold',
-        fontSize:18,
-        textTransform:'uppercase',
+        fontSize:15,
     },
     score:{
         fontFamily:'PlusJakartaSans-Bold',
         fontSize:50,
-        marginTop:2,
         color:colors['red']
     },
     message:{
@@ -122,7 +120,8 @@ const styles = StyleSheet.create({
         gap:10,
         backgroundColor:'white',
         padding:10,
-        borderRadius:10
+        borderRadius:10,
+        alignItems:'center'
     },
     reponsecorrect:{
         fontFamily:'Montserrat-Bold',

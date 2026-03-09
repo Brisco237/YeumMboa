@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     fontSize:20,
   },
   homesection: {
-    marginTop:20,
+    marginTop:0,
   },
   logo: {
     flexDirection: "row",

@@ -55,9 +55,10 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems:'center',
+    marginTop:15,
   },
   infoicon :{
-    marginTop :30,
     fontSize:18,
     marginRight:20,
   }, 

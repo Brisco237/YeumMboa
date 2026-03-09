@@ -40,17 +40,17 @@ const styles = StyleSheet.create({
     backgroundColor:colors['background-light'],
   },
   header: {
-    marginTop:20,
+    marginTop:15,
     marginLeft:20,
-    marginBottom:10,
+    marginBottom:1,
     flexDirection:'row',
-    gap:50,
+    alignItems:'center',
+    gap:30,
   },
   title: {
     fontFamily:'PlusJakartaSans-Bold',
     fontSize: 20,
     fontWeight: 'bold',
-    marginTop:10,
   },
   logo:{
     marginTop:20,
