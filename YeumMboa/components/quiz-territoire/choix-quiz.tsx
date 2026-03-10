@@ -1,11 +1,14 @@
 import React from 'react';
-import { View, Text, StyleSheet, } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { colors } from '../../theme/color';
 import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import { useRouter } from 'expo-router';
 
 export default function ChoixQuiz(){
+    const router = useRouter();
+
     return (
         <View style={{marginBottom:15}}>
             <View style={styles.box}>
@@ -18,10 +21,10 @@ export default function ChoixQuiz(){
                     administrative et géographique du pays.</Text>
                 <View style={styles.boxfoot}>
                     <Text style={styles.level}>Niveau : Facile</Text>
-                    <View style={styles.button}>
+                    <TouchableOpacity style={styles.button} onPress={() => router.push('/quiz-regional')}>
                         <Text style={styles.demarrer}>Démarrer</Text>
                         <FontAwesome name="play" style={styles.iconstart} />
-                    </View>
+                    </TouchableOpacity>
                 </View>
             </View>
 
