@@ -6,6 +6,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { useRouter } from 'expo-router';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Logo from '../../components/logo'
 
 export default function PageResultat({currentQuestionIndex,
     setCurrentQuestionIndex,

@@ -16,7 +16,9 @@ export default function HeadProgressBar(){
             </View>
             <View style={styles.questioncontainer}>
                 <Text style={styles.questiontext}>Où se situe la région du</Text>
-                <Text style={styles.regionquestion}>Nord-Ouest ?</Text>
+                <Text style={styles.regionquestion}>Nord-Ouest 
+                    <Text style={{color:'black',textDecorationLine:'none'}}> ?</Text>
+                </Text>
             </View>
         </View>
     );
@@ -39,7 +41,8 @@ const styles = StyleSheet.create({
         alignItems:'center'
     },
     questiontext:{
-        fontFamily:'Montserrat-Regular',
+        fontFamily:'Montserrat-Bold',
+        fontSize:18
     },
     regionquestion:{
         fontSize:20,
@@ -47,5 +50,5 @@ const styles = StyleSheet.create({
         textDecorationLine:'underline',
         fontFamily:'Montserrat-Bold',
         paddingLeft:10
-    }
+    },
 });

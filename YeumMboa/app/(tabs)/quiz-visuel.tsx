@@ -42,7 +42,7 @@ export default function QuizVisuel(){
                 </View>
                 <Trait />
             </View>
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.container}>
                     <VieScore vies={vies} score={score} />
                     <Trait />

@@ -17,7 +17,7 @@ export default function QuizTerritoire(){
               </View>
               <Trait />
             </View>
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.container}>
                     <Text style={styles.title1}>Explorez le Cameroun</Text>
                     <Text style={styles.text}>Testez vos connaissance sur l'organisation administrative
