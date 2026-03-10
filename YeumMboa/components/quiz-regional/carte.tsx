@@ -13,7 +13,7 @@ export default function AffichageCarte() {
         height={screenWidth} 
         viewBox="0 0 1000 1000"
       >
-        <G fill="#16301a" stroke="#ffffff" strokeWidth="2">
+        <G fill="#16301a" stroke="#ffffff" strokeWidth="5">
           {REGIONS_CAMEROUN.map((region) => (
             <Path
               key={region.id}
@@ -32,5 +32,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#f4f4f4',
     alignItems: 'center',
     justifyContent: 'center',
+    marginTop:50
   },
 });
