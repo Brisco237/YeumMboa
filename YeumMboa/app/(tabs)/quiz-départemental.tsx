@@ -1,0 +1,63 @@
+import React from 'react';
+import { View, StyleSheet, ScrollView, Text } from 'react-native';
+import Carte from '../../components/quiz-regional/carte'
+import ProgressBar from '../../components/quiz-regional/progressbar';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import ArrowLeft from '../../components/arrow-left';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { colors } from '../../theme/color'
+
+export default function AffichageCarte() {
+  return (
+    <SafeAreaView style={styles.container}>
+        <View style={styles.head}>
+            <ArrowLeft/>
+            <Text style={styles.title}>Quiz Régional</Text>
+        </View>
+        <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
+          <ProgressBar/>
+          <Carte/>
+          <View style={styles.indication}>
+            <Text style={styles.indicationtext}>Touchez la zone correspondante sur la carte</Text>
+            <MaterialIcons name="touch-app" style={styles.touchicon}/>
+          </View>
+        </ScrollView>
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  body:{
+    marginHorizontal:20
+  },
+  head:{
+    flexDirection:'row',
+    alignItems:'center',
+    gap:30,
+    backgroundColor:'white',
+    padding:10
+  },
+  title:{
+    fontFamily:'Montserrat-Bold',
+    fontSize:20
+  },
+  indication:{
+    marginTop:15,
+    alignItems:'center',
+    justifyContent:'space-evenly',
+    flexDirection:'row',
+    marginBottom:30
+  },
+  indicationtext:{
+    fontFamily:'PlusJakartaSans-Regular',
+    fontStyle:'italic',
+    fontSize:15
+  },
+  touchicon:{
+    fontSize:18,
+    color:colors['red']
+  }
+});
