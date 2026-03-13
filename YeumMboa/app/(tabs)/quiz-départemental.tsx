@@ -1,27 +1,27 @@
 import React from 'react';
 import { View, StyleSheet, ScrollView, Text } from 'react-native';
-import Carte from '../../components/quiz-regional/carte'
+import CarteDepartemental from '../../components/quiz-départemental/carte_departement'
 import ProgressBar from '../../components/quiz-regional/progressbar';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ArrowLeft from '../../components/arrow-left';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { colors } from '../../theme/color'
 
-export default function AffichageCarte() {
+export default function QuizDepartemental() {
   return (
     <SafeAreaView style={styles.container}>
-        <View style={styles.head}>
-            <ArrowLeft/>
-            <Text style={styles.title}>Quiz Régional</Text>
+      <View style={styles.head}>
+        <ArrowLeft/>
+        <Text style={styles.title}>Quiz Départemental</Text>
+      </View>
+      <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
+        <ProgressBar/>
+        <CarteDepartemental/>
+        <View style={styles.indication}>
+          <Text style={styles.indicationtext}>Touchez la zone correspondante sur la carte</Text>
+          <MaterialIcons name="touch-app" style={styles.touchicon}/>
         </View>
-        <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
-          <ProgressBar/>
-          <Carte/>
-          <View style={styles.indication}>
-            <Text style={styles.indicationtext}>Touchez la zone correspondante sur la carte</Text>
-            <MaterialIcons name="touch-app" style={styles.touchicon}/>
-          </View>
-        </ScrollView>
+      </ScrollView>
     </SafeAreaView>
   );
 }

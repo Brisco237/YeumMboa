@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, StyleSheet, ScrollView, Text } from 'react-native';
-import Carte from '../../components/quiz-regional/carte'
+import Carte from '../../components/quiz-regional/carte_regional'
 import ProgressBar from '../../components/quiz-regional/progressbar';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ArrowLeft from '../../components/arrow-left';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { colors } from '../../theme/color'
 
-export default function AffichageCarte() {
+export default function QuizRegional() {
   return (
     <SafeAreaView style={styles.container}>
         <View style={styles.head}>
