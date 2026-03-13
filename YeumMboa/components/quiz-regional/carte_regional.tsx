@@ -3,10 +3,16 @@ import { View, StyleSheet, Dimensions } from 'react-native';
 import Svg, { G, Path } from 'react-native-svg';
 import { REGIONS_CAMEROUN } from '../../data/regions';
 import { colors } from '../../theme/color'
+import Animated, { useSharedValue } from 'react-native-reanimated';
+
 
 const { width: screenWidth } = Dimensions.get('window');
 
 export default function CarteRegional() {
+  const scale = useSharedValue(1);      
+  const translateX = useSharedValue(0); 
+  const translateY = useSharedValue(0); 
+  
   return (
     <View style={styles.container}>
       <Svg 

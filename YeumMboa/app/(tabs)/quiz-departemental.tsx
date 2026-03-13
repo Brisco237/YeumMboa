@@ -6,9 +6,11 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import ArrowLeft from '../../components/arrow-left';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { colors } from '../../theme/color'
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export default function QuizDepartemental() {
   return (
+    <GestureHandlerRootView style={{ flex: 1 }}>
     <SafeAreaView style={styles.container}>
       <View style={styles.head}>
         <ArrowLeft/>
@@ -23,6 +25,7 @@ export default function QuizDepartemental() {
         </View>
       </ScrollView>
     </SafeAreaView>
+    </GestureHandlerRootView>
   );
 }
 
