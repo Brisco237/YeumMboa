@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, ScrollView, Text } from 'react-native';
 import Carte from '../../components/quiz-regional/carte_regional'
-import ProgressBar from '../../components/quiz-regional/progressbar';
+import ProgressBarRegional from '../../components/quiz-regional/progressbar_regional';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ArrowLeft from '../../components/arrow-left';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
@@ -11,11 +11,11 @@ export default function QuizRegional() {
   return (
     <SafeAreaView style={styles.container}>
         <View style={styles.head}>
-            <ArrowLeft/>
-            <Text style={styles.title}>Quiz Régional</Text>
+          <ArrowLeft/>
+          <Text style={styles.title}>Quiz Régional</Text>
         </View>
         <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
-          <ProgressBar/>
+          <ProgressBarRegional/>
           <Carte/>
           <View style={styles.indication}>
             <Text style={styles.indicationtext}>Touchez la zone correspondante sur la carte</Text>

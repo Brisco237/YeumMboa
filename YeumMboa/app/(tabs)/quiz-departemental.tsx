@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, ScrollView, Text } from 'react-native';
 import CarteDepartemental from '../../components/quiz-départemental/carte_departement'
-import ProgressBar from '../../components/quiz-regional/progressbar';
+import ProgressBarDepartement from '../../components/quiz-départemental/progressbar_departemental';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ArrowLeft from '../../components/arrow-left';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
@@ -15,7 +15,7 @@ export default function QuizDepartemental() {
         <Text style={styles.title}>Quiz Départemental</Text>
       </View>
       <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
-        <ProgressBar/>
+        <ProgressBarDepartement/>
         <CarteDepartemental/>
         <View style={styles.indication}>
           <Text style={styles.indicationtext}>Touchez la zone correspondante sur la carte</Text>

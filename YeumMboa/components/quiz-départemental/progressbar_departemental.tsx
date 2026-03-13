@@ -4,19 +4,19 @@ import { View, StyleSheet, Text } from 'react-native';
 import ProgressBar from '../../components/missions-page/progress-bar'
 
 
-export default function HeadProgressBar(){
+export default function ProgressBarDepartement(){
     return(
         <View>
             <View style={styles.progressbar}>
                 <View style={styles.textbar}>
                     <Text style={styles.text}>Progression</Text>
-                    <Text style={styles.text}>Régions : 0 / 10</Text>
+                    <Text style={styles.text}>Départements : 0 / 58</Text>
                 </View>
                 <ProgressBar/>
             </View>
             <View style={styles.questioncontainer}>
-                <Text style={styles.questiontext}>Où se situe la région du</Text>
-                <Text style={styles.regionquestion}>Nord-Ouest 
+                <Text style={styles.questiontext}>Où se situe le département du</Text>
+                <Text style={styles.regionquestion}>Dja et Lobo 
                     <Text style={{color:'black',textDecorationLine:'none'}}> ?</Text>
                 </Text>
             </View>

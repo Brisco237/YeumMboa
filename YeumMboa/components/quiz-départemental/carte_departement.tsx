@@ -10,11 +10,14 @@ export default function CarteDepartemental(){
   return (
   <View style={styles.container}>
     <Svg 
-      width={screenWidth} 
+      width={screenWidth}  
       height={screenWidth} 
-      viewBox="0 0 1000 1000"
+      viewBox="0 0 300 300"
+      preserveAspectRatio="xMidYMid meet"
     >
-      <G fill="#000000" stroke="#ffffff" strokeWidth="4">
+      <G fill="#000000" stroke="#ffffff" 
+        strokeWidth="1"
+      >
         {DEPARTEMENTS_CAMEROUN.map((departement) => (
           <Path key={departement.id} d={departement.path}/>
         ))}
@@ -26,15 +29,13 @@ export default function CarteDepartemental(){
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex:1,
     backgroundColor:colors['background-light'],
-    alignItems: 'center',
-    justifyContent: 'center',
     marginTop:40,
     borderWidth:2,
     borderColor:colors['s-green'],
-    borderRadius: 10,
+    borderRadius:10,
     borderStyle:'dashed',
-    padding: 15,
+    padding:15,
   },
 });

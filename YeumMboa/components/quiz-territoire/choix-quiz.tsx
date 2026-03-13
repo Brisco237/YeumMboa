@@ -38,7 +38,7 @@ export default function ChoixQuiz(){
                     départementales du 237.</Text>
                 <View style={styles.boxfoot}>
                     <Text style={styles.level}>Niveau : Moyen</Text>
-                    <TouchableOpacity style={styles.button} onPress={() => router.push('/quiz-départemental')}>
+                    <TouchableOpacity style={styles.button} onPress={() => router.push('/quiz-departemental')}>
                         <Text style={styles.demarrer}>Démarrer</Text>
                         <FontAwesome name="play" style={styles.iconstart} />
                     </TouchableOpacity>
