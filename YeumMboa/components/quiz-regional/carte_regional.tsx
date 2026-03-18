@@ -20,7 +20,7 @@ export default function CarteRegional() {
         height={screenWidth} 
         viewBox="0 0 1000 1000"
       >
-        <G fill="#000000" stroke="#ffffff" strokeWidth="4">
+        <G fill="#f8f6f6" stroke="#000000" strokeWidth="2">
           {REGIONS_CAMEROUN.map((region) => (
             <Path
               key={region.id}

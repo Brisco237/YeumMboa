@@ -4,7 +4,6 @@ import CarteDepartemental from '../../components/quiz-départemental/carte_depar
 import ProgressBarDepartement from '../../components/quiz-départemental/progressbar_departemental';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ArrowLeft from '../../components/arrow-left';
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { colors } from '../../theme/color'
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
@@ -21,7 +20,6 @@ export default function QuizDepartemental() {
         <CarteDepartemental/>
         <View style={styles.indication}>
           <Text style={styles.indicationtext}>Touchez la zone correspondante sur la carte</Text>
-          <MaterialIcons name="touch-app" style={styles.touchicon}/>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -31,7 +29,7 @@ export default function QuizDepartemental() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flex:1,
   },
   body:{
     marginHorizontal:20
@@ -57,10 +55,6 @@ const styles = StyleSheet.create({
   indicationtext:{
     fontFamily:'PlusJakartaSans-Regular',
     fontStyle:'italic',
-    fontSize:15
+    fontSize:14
   },
-  touchicon:{
-    fontSize:18,
-    color:colors['red']
-  }
 });

@@ -7,7 +7,7 @@ export default function Equipe(){
             <Text style={styles.title}>Equipe de conception</Text>
             <View style={styles.box1}>
                 <View style={styles.p1}>
-                    <Image source={require('../../assets/images/profile.png')}
+                    <Image source={require('../../assets/images/profile.webp')}
                     style={styles.image}></Image>
                     <Text style={styles.nom}>Kamdem Brice</Text>
                     <Text style={styles.role}>Dev & Historien</Text>

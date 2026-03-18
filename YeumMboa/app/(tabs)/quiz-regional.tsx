@@ -4,7 +4,6 @@ import Carte from '../../components/quiz-regional/carte_regional'
 import ProgressBarRegional from '../../components/quiz-regional/progressbar_regional';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ArrowLeft from '../../components/arrow-left';
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { colors } from '../../theme/color'
 
 export default function QuizRegional() {
@@ -19,7 +18,6 @@ export default function QuizRegional() {
           <Carte/>
           <View style={styles.indication}>
             <Text style={styles.indicationtext}>Touchez la zone correspondante sur la carte</Text>
-            <MaterialIcons name="touch-app" style={styles.touchicon}/>
           </View>
         </ScrollView>
     </SafeAreaView>
@@ -54,10 +52,6 @@ const styles = StyleSheet.create({
   indicationtext:{
     fontFamily:'PlusJakartaSans-Regular',
     fontStyle:'italic',
-    fontSize:15
+    fontSize:14
   },
-  touchicon:{
-    fontSize:18,
-    color:colors['red']
-  }
 });
