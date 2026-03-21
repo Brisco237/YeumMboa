@@ -5,8 +5,16 @@ import ProgressBarRegional from '../../components/quiz-regional/progressbar_regi
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ArrowLeft from '../../components/arrow-left';
 import { colors } from '../../theme/color'
+import { useState } from 'react'
+import { REGIONS_CAMEROUN } from '../../data/regions';
+import VieScore from '../../components/quiz-regional/vies_scores';
 
-export default function QuizRegional() {
+export default function QuizRegional(){
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [questions, setQuestions] = useState(0); 
+  const [score, setScore] = useState(0);
+  const [vies, setVies] = useState(3);
+
   return (
     <SafeAreaView style={styles.container}>
         <View style={styles.head}>
@@ -14,7 +22,11 @@ export default function QuizRegional() {
           <Text style={styles.title}>Quiz Régional</Text>
         </View>
         <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
-          <ProgressBarRegional/>
+          <VieScore vies={vies} score={score} />
+          <ProgressBarRegional
+            questions={questions}
+            currentQuestionIndex={currentQuestionIndex}
+          />
           <Carte/>
           <View style={styles.indication}>
             <Text style={styles.indicationtext}>Touchez la zone correspondante sur la carte</Text>

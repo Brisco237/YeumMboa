@@ -15,20 +15,26 @@ export default function CarteDepartemental() {
 
   // Gesture pinch (zoom)
   const pinchGesture = Gesture.Pinch()
-    .onUpdate((e) => {
-      scale.value = Math.min(Math.max(e.scale, 1), 4);
-    })
-    .onEnd(() => {
-      if (scale.value < 1) scale.value = 1;
-      if (scale.value > 4) scale.value = 4;
-    });
+  .onUpdate((e) => {
+    // Zoom autour du point des doigts
+    const newScale = e.scale;
+    // Calcul du déplacement pour garder le focus sur les doigts
+    translateX.value = e.focalX - (e.focalX - translateX.value) * (newScale / scale.value);
+    translateY.value = e.focalY - (e.focalY - translateY.value) * (newScale / scale.value);
+
+    scale.value = newScale;
+  })
+  .onEnd(() => {
+    if (scale.value < 1) scale.value = 1;
+    if (scale.value > 5) scale.value = 5;
+  });
 
   // Gesture pan (déplacement)
   const panGesture = Gesture.Pan()
-    .onUpdate((e) => {
-      translateX.value = Math.min(Math.max(e.translationX, -80), 80);
-      translateY.value = Math.min(Math.max(e.translationY, -200), 80);
-    });
+  .onUpdate((e) => {
+    translateX.value = Math.min(Math.max(e.translationX, -80), 80);
+    translateY.value = Math.min(Math.max(e.translationY, -200), 80);
+  });
 
   // Combiner les deux gestures
   const composedGesture = Gesture.Simultaneous(pinchGesture, panGesture);
@@ -76,6 +82,6 @@ const styles = StyleSheet.create({
     padding:40,
     alignItems: 'center',
     justifyContent: 'center',
-    overflow: 'hidden',
+    overflow:'hidden',
   },
 });

@@ -8,7 +8,7 @@ import Animated, { useSharedValue } from 'react-native-reanimated';
 
 const { width: screenWidth } = Dimensions.get('window');
 
-export default function CarteRegional() {
+export default function CarteRegional(){
   const scale = useSharedValue(1);      
   const translateX = useSharedValue(0); 
   const translateY = useSharedValue(0); 
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     backgroundColor:colors['background-light'],
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop:40,
+    marginTop:30,
     borderWidth:2,
     borderColor:colors['s-green'],
     borderRadius: 10,

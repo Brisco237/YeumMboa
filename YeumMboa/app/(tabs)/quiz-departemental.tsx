@@ -6,8 +6,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import ArrowLeft from '../../components/arrow-left';
 import { colors } from '../../theme/color'
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import VieScore from '../../components/quiz-départemental/vies_scores';
+import { useState } from 'react'
 
 export default function QuizDepartemental() {
+  const [score, setScore] = useState(0);
+  const [vies, setVies] = useState(3);
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
     <SafeAreaView style={styles.container}>
@@ -16,6 +21,7 @@ export default function QuizDepartemental() {
         <Text style={styles.title}>Quiz Départemental</Text>
       </View>
       <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
+        <VieScore vies={vies} score={score} />
         <ProgressBarDepartement/>
         <CarteDepartemental/>
         <View style={styles.indication}>

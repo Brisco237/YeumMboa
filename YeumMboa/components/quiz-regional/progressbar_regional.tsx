@@ -4,7 +4,7 @@ import { View, StyleSheet, Text } from 'react-native';
 import ProgressBar from '../../components/missions-page/progress-bar'
 
 
-export default function ProgressBarRegional(){
+export default function ProgressBarRegional({questions,currentQuestionIndex}){
     return(
         <View>
             <View style={styles.progressbar}>
@@ -16,7 +16,7 @@ export default function ProgressBarRegional(){
             </View>
             <View style={styles.questioncontainer}>
                 <Text style={styles.questiontext}>Où se situe la région du</Text>
-                <Text style={styles.regionquestion}>Nord-Ouest 
+                <Text style={styles.regionquestion}>{questions[currentQuestionIndex]?.name}
                     <Text style={{color:'black',textDecorationLine:'none'}}> ?</Text>
                 </Text>
             </View>
@@ -27,7 +27,7 @@ export default function ProgressBarRegional(){
 
 const styles = StyleSheet.create({
     progressbar:{
-        marginTop:20
+        marginTop:10
     },
     textbar:{
         flexDirection:'row',
