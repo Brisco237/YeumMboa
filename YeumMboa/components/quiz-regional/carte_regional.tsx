@@ -4,12 +4,17 @@ import Svg, { G, Path } from 'react-native-svg';
 import { REGIONS_CAMEROUN } from '../../data/regions';
 import { colors } from '../../theme/color'
 import Animated, { useSharedValue } from 'react-native-reanimated';
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 
 
 const { width: screenWidth } = Dimensions.get('window');
 
-export default function CarteRegional({currentRegion}){
+export default function CarteRegional(
+    {currentRegion,score,setScore,vies,setVies,
+    gameOver,setRemainingRegions,remainingRegions,
+    setGameOver,setCurrentRegion
+    }
+  ){
   const scale = useSharedValue(1);      
   const translateX = useSharedValue(0); 
   const translateY = useSharedValue(0);
@@ -17,10 +22,44 @@ export default function CarteRegional({currentRegion}){
   const [selectedRegion, setSelectedRegion] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
 
+  const getRandomRegion = (regionsArray) => {
+    const index = Math.floor(Math.random() * regionsArray.length);
+    return regionsArray[index];
+  };
+  useEffect(() => {
+    if (remainingRegions.length > 0) {
+      setCurrentRegion(getRandomRegion(remainingRegions));
+    }
+  }, []);
   const handleRegionClick = (region) => {
-    if (showAnswer) return;
+    if (showAnswer || gameOver) return;
     setSelectedRegion(region);
     setShowAnswer(true);
+
+    if (region.name === currentRegion.name) {
+      setScore(score + 10);
+    } else {
+      setVies(vies - 1);
+    }
+
+    setRemainingRegions((prev) =>
+      prev.filter((r) => r.id !== currentRegion.id)
+    );
+
+    // Passer à la prochaine question après 1.5 sec
+    setTimeout(() => {
+      if (vies - (region.name !== currentRegion.name ? 1 : 0) <= 0 || remainingRegions.length <= 1) {
+        setGameOver(true); // fin du quiz
+      } else {
+        // Tirer une nouvelle région parmi celles restantes
+        const next = getRandomRegion(
+          remainingRegions.filter((r) => r.id !== currentRegion.id)
+        );
+        setCurrentRegion(next);
+        setSelectedRegion(null);
+        setShowAnswer(false);
+      }
+    }, 1500)
   }; 
 
   return (

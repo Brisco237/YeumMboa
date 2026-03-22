@@ -10,21 +10,15 @@ import { REGIONS_CAMEROUN } from '../../data/regions';
 import VieScore from '../../components/quiz-regional/vies_scores';
 
 export default function QuizRegional(){
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [questions, setQuestions] = useState(0); 
   // Vie et score
   const [score, setScore] = useState(0);
   const [vies, setVies] = useState(3);
   // Question Actuel
   const [currentRegion, setCurrentRegion] = useState(null);
-
-  const getRandomRegion = () => {
-    const index = Math.floor(Math.random() * REGIONS_CAMEROUN.length);
-    return REGIONS_CAMEROUN[index];
-  };
-  useEffect(() => {
-    setCurrentRegion(getRandomRegion());
-  }, []);
+  // régions non jouées
+  const [remainingRegions, setRemainingRegions] = useState([...REGIONS_CAMEROUN]);
+  // fin du jeu
+  const [gameOver, setGameOver] = useState(false);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -37,7 +31,18 @@ export default function QuizRegional(){
           <ProgressBarRegional
             currentRegion={currentRegion}
           />
-          <Carte currentRegion={currentRegion}/>
+          <Carte 
+            currentRegion={currentRegion}
+            vies={vies}
+            setVies={setVies}
+            score={score}
+            setScore={setScore}
+            gameOver={gameOver}
+            setRemainingRegions={setRemainingRegions}
+            remainingRegions={remainingRegions}
+            setGameOver={setGameOver}
+            setCurrentRegion={setCurrentRegion}
+          />
           <View style={styles.indication}>
             <Text style={styles.indicationtext}>Touchez la zone correspondante sur la carte</Text>
           </View>
