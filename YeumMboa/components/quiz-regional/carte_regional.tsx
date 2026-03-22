@@ -14,7 +14,8 @@ export default function CarteRegional(
     gameOver,setRemainingRegions,remainingRegions,
     setGameOver,setCurrentRegion,setSelectedRegion,
     showAnswer,setShowAnswer,selectedRegion,setCorrectAnswers,
-    correctAnswers,setIncorrectAnswers,incorrectAnswers
+    correctAnswers,setIncorrectAnswers,incorrectAnswers,
+    setQuestionNumber,questionNumber
     }
   ){
   const scale = useSharedValue(1);      
@@ -36,10 +37,10 @@ export default function CarteRegional(
     setSelectedRegion(region);
     setShowAnswer(true);
 
-    if (region.name === currentRegion.name) {
+    if(region.name === currentRegion.name) {
       setScore(score + 10);
       setCorrectAnswers(correctAnswers + 1); 
-    } else{
+    }else{
       setVies(vies - 1);
       setIncorrectAnswers(incorrectAnswers + 1);
     }
@@ -62,6 +63,7 @@ export default function CarteRegional(
         setShowAnswer(false);
       }
     }, 1500)
+    setQuestionNumber(questionNumber + 1);
   }; 
 
   return (

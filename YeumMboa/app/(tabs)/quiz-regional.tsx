@@ -24,6 +24,8 @@ export default function QuizRegional(){
   // Réponses correct et Incorrect
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [incorrectAnswers, setIncorrectAnswers] = useState(0);
+  // question number
+  const [questionNumber, setQuestionNumber] = useState(0);
   // fin du jeu
   const [gameOver, setGameOver] = useState(false);
 
@@ -46,9 +48,12 @@ export default function QuizRegional(){
           setVies(3);
           setRemainingRegions([...REGIONS_CAMEROUN]);
           setCurrentRegion(getRandomRegion([...REGIONS_CAMEROUN]));
+          setQuestionNumber(0)
           setSelectedRegion(null);
           setShowAnswer(false);
           setGameOver(false);
+          setCorrectAnswers(0)
+          setIncorrectAnswers(0)
         }}
       />
     );
@@ -64,6 +69,7 @@ export default function QuizRegional(){
           <VieScore vies={vies} score={score} />
           <ProgressBarRegional
             currentRegion={currentRegion}
+            questionNumber={questionNumber}
           />
           <Carte 
             currentRegion={currentRegion}
@@ -84,7 +90,8 @@ export default function QuizRegional(){
             setCorrectAnswers={setCorrectAnswers}
             incorrectAnswers={incorrectAnswers}
             setIncorrectAnswers={setIncorrectAnswers}
-
+            questionNumber={questionNumber}
+            setQuestionNumber={setQuestionNumber}
           />
           <View style={styles.indication}>
             <Text style={styles.indicationtext}>Touchez la zone correspondante sur la carte</Text>

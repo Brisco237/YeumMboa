@@ -1,18 +1,30 @@
 import { colors } from '@/theme/color';
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import ProgressBar from '../../components/missions-page/progress-bar'
 
 
-export default function ProgressBarRegional({currentRegion}){
+
+export default function ProgressBarRegional({currentRegion,questionNumber}){
     return(
         <View>
             <View style={styles.progressbar}>
                 <View style={styles.textbar}>
                     <Text style={styles.text}>Progression</Text>
-                    <Text style={styles.text}>Régions : 0 / 10</Text>
+                    <Text style={styles.text}>Régions : {questionNumber} / 10</Text>
                 </View>
-                <ProgressBar/>
+                <View style={{ 
+                    width:'100%',height:20, backgroundColor:'#ddd', 
+                    borderRadius:10, marginTop:10 
+                    }}>
+                    <View
+                        style={{
+                        width: `${(questionNumber / 10) * 100}%`,
+                        height: '100%',
+                        backgroundColor:colors['green'],
+                        borderRadius: 10,
+                        }}
+                    />
+                </View>
             </View>
             <View style={styles.questioncontainer}>
                 <Text style={styles.questiontext}>Où se situe la région :</Text>
