@@ -8,6 +8,7 @@ import { colors } from '../../theme/color'
 import { useState, useEffect } from 'react'
 import { REGIONS_CAMEROUN } from '../../data/regions';
 import VieScore from '../../components/quiz-regional/vies_scores';
+import PageResultat from '../../components/quiz-regional/resultat-quiz-regional';
 
 export default function QuizRegional(){
   // Vie et score
@@ -15,10 +16,43 @@ export default function QuizRegional(){
   const [vies, setVies] = useState(3);
   // Question Actuel
   const [currentRegion, setCurrentRegion] = useState(null);
+  // Région choisi
+  const [selectedRegion, setSelectedRegion] = useState(null);
+  const [showAnswer, setShowAnswer] = useState(false);
   // régions non jouées
   const [remainingRegions, setRemainingRegions] = useState([...REGIONS_CAMEROUN]);
+  // Réponses correct et Incorrect
+  const [correctAnswers, setCorrectAnswers] = useState(0);
+  const [incorrectAnswers, setIncorrectAnswers] = useState(0);
   // fin du jeu
   const [gameOver, setGameOver] = useState(false);
+
+  const getRandomRegion = (regionsArray) => {
+    const index = Math.floor(Math.random() * regionsArray.length);
+    return regionsArray[index];
+  };
+
+  if(gameOver){
+    const message = vies <= 0 ? "Vous avez perdu toutes vos vies !" : "Vous avez terminé les 10 régions !";
+    return(
+      <PageResultat
+        score={score}
+        vies={vies}
+        message={message}
+        correctAnswers={correctAnswers}
+        incorrectAnswers={incorrectAnswers}
+        onRestart={() => {
+          setScore(0);
+          setVies(3);
+          setRemainingRegions([...REGIONS_CAMEROUN]);
+          setCurrentRegion(getRandomRegion([...REGIONS_CAMEROUN]));
+          setSelectedRegion(null);
+          setShowAnswer(false);
+          setGameOver(false);
+        }}
+      />
+    );
+  }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -42,6 +76,15 @@ export default function QuizRegional(){
             remainingRegions={remainingRegions}
             setGameOver={setGameOver}
             setCurrentRegion={setCurrentRegion}
+            selectedRegion={selectedRegion}
+            setSelectedRegion={setSelectedRegion}
+            showAnswer={showAnswer}
+            setShowAnswer={setShowAnswer}
+            correctAnswers={correctAnswers}
+            setCorrectAnswers={setCorrectAnswers}
+            incorrectAnswers={incorrectAnswers}
+            setIncorrectAnswers={setIncorrectAnswers}
+
           />
           <View style={styles.indication}>
             <Text style={styles.indicationtext}>Touchez la zone correspondante sur la carte</Text>

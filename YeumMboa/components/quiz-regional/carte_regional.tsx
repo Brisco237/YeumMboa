@@ -12,15 +12,14 @@ const { width: screenWidth } = Dimensions.get('window');
 export default function CarteRegional(
     {currentRegion,score,setScore,vies,setVies,
     gameOver,setRemainingRegions,remainingRegions,
-    setGameOver,setCurrentRegion
+    setGameOver,setCurrentRegion,setSelectedRegion,
+    showAnswer,setShowAnswer,selectedRegion,setCorrectAnswers,
+    correctAnswers,setIncorrectAnswers,incorrectAnswers
     }
   ){
   const scale = useSharedValue(1);      
   const translateX = useSharedValue(0); 
   const translateY = useSharedValue(0);
-  // Région choisi
-  const [selectedRegion, setSelectedRegion] = useState(null);
-  const [showAnswer, setShowAnswer] = useState(false);
 
   const getRandomRegion = (regionsArray) => {
     const index = Math.floor(Math.random() * regionsArray.length);
@@ -31,6 +30,7 @@ export default function CarteRegional(
       setCurrentRegion(getRandomRegion(remainingRegions));
     }
   }, []);
+
   const handleRegionClick = (region) => {
     if (showAnswer || gameOver) return;
     setSelectedRegion(region);
@@ -38,8 +38,10 @@ export default function CarteRegional(
 
     if (region.name === currentRegion.name) {
       setScore(score + 10);
-    } else {
+      setCorrectAnswers(correctAnswers + 1); 
+    } else{
       setVies(vies - 1);
+      setIncorrectAnswers(incorrectAnswers + 1);
     }
 
     setRemainingRegions((prev) =>
