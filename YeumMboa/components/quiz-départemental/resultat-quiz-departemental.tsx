@@ -10,7 +10,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function PageResultat({score,message,onRestart,vies,correctAnswers,incorrectAnswers}){ 
     const router = useRouter();
-    const maxScore = 10 * 10;
+    const maxScore = 10 * 58;
     const percentage = Math.round((score / maxScore) * 100);
     return(
         <SafeAreaView style={styles.container}>

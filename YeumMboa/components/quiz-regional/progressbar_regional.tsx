@@ -13,7 +13,7 @@ export default function ProgressBarRegional({currentRegion,questionNumber}){
                     <Text style={styles.text}>Régions : {questionNumber} / 10</Text>
                 </View>
                 <View style={{ 
-                    width:'100%',height:20, backgroundColor:'#ddd', 
+                    width:'100%',height:20, backgroundColor:'#e6d4d4',
                     borderRadius:10, marginTop:10 
                     }}>
                     <View

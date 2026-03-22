@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
         backgroundColor:'white',
         padding:20,
         borderRadius:10,
+        marginTop:10,
     },
     flag:{
         color:colors['red'],

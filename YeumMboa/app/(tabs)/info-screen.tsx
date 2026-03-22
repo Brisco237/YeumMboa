@@ -1,5 +1,4 @@
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
-import Logo from '../../components/logo';
 import ArrowLeft from '../../components/arrow-left';
 import Trait from '../../components/trait';
 import {colors} from '../../theme/color';
@@ -21,10 +20,9 @@ export default function InfoSreen(){
         </View>
         <ScrollView showsVerticalScrollIndicator={false}>
           <View style={{marginHorizontal:20}}>
-            <View style={{alignItems:'center',marginVertical:15}}><Logo/></View>
-              <View><InfoMission /></View>
-              <View><Equipe /></View>
-              <View><ReferenceInfo /></View>
+            <View><InfoMission /></View>
+            <View><Equipe /></View>
+            <View><ReferenceInfo /></View>
           </View>
         </ScrollView>
       </SafeAreaView>

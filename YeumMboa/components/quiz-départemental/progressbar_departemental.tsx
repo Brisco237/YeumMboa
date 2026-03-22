@@ -1,22 +1,32 @@
 import { colors } from '@/theme/color';
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import ProgressBar from '../../components/missions-page/progress-bar'
 
 
-export default function ProgressBarDepartement(){
+export default function ProgressBarDepartement({currentRegion,questionNumber}){
     return(
         <View>
             <View style={styles.progressbar}>
                 <View style={styles.textbar}>
                     <Text style={styles.text}>Progression</Text>
-                    <Text style={styles.text}>Départements : 0 / 58</Text>
+                    <Text style={styles.text}>Départements : {questionNumber} / 58</Text>
                 </View>
-                <ProgressBar/>
+                <View style={{ width:'100%',height:20, backgroundColor:'#e6d4d4',
+                borderRadius:10, marginTop:10 
+                    }}>
+                    <View
+                        style={{
+                        width: `${(questionNumber / 58) * 100}%`,
+                        height: '100%',
+                        backgroundColor:colors['green'],
+                        borderRadius: 10,
+                        }}
+                    />
+                </View>
             </View>
             <View style={styles.questioncontainer}>
-                <Text style={styles.questiontext}>Où se situe le département du</Text>
-                <Text style={styles.regionquestion}>Dja et Lobo 
+                <Text style={styles.questiontext}>Où se situe le département : </Text>
+                <Text style={styles.regionquestion}>{currentRegion?.name}
                     <Text style={{color:'black',textDecorationLine:'none'}}> ?</Text>
                 </Text>
             </View>
