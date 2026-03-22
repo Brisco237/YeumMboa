@@ -4,15 +4,25 @@ import Svg, { G, Path } from 'react-native-svg';
 import { REGIONS_CAMEROUN } from '../../data/regions';
 import { colors } from '../../theme/color'
 import Animated, { useSharedValue } from 'react-native-reanimated';
+import { useState } from 'react'
 
 
 const { width: screenWidth } = Dimensions.get('window');
 
-export default function CarteRegional(){
+export default function CarteRegional({currentRegion}){
   const scale = useSharedValue(1);      
   const translateX = useSharedValue(0); 
-  const translateY = useSharedValue(0); 
-  
+  const translateY = useSharedValue(0);
+  // Région choisi
+  const [selectedRegion, setSelectedRegion] = useState(null);
+  const [showAnswer, setShowAnswer] = useState(false);
+
+  const handleRegionClick = (region) => {
+    if (showAnswer) return;
+    setSelectedRegion(region);
+    setShowAnswer(true);
+  }; 
+
   return (
     <View style={styles.container}>
       <Svg 
@@ -25,6 +35,15 @@ export default function CarteRegional(){
             <Path
               key={region.id}
               d={region.path}
+              fill={
+                !showAnswer? "white": 
+                region.name === currentRegion.name
+                ? colors['green']
+                : region.name === selectedRegion?.name
+                ? colors['red']
+                : 'white'
+              } 
+              onPress={() => handleRegionClick(region)}
             />
           ))}
         </G>
