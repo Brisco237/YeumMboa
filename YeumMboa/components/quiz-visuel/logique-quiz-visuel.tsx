@@ -1,9 +1,13 @@
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import { colors } from '../../theme/color';
-import { SetStateAction, useState } from 'react';
-import { quizData } from '../../data/question-photo';
+import { useState,useEffect } from 'react';
 
-
+const shuffleArray = (array) => {
+  return array
+    .map((value) => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+};
 export default function LogiqueQuizVisuel({
     quizData,
     currentQuestionIndex,
@@ -13,18 +17,22 @@ export default function LogiqueQuizVisuel({
 
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const currentQuestion = quizData[currentQuestionIndex];
+    const [shuffledChoices, setShuffledChoices] = useState([]);
+
+    useEffect(() => {
+        const shuffled = shuffleArray(currentQuestion.choix);
+        setShuffledChoices(shuffled);
+    }, [currentQuestionIndex]);
 
     const handleAnswerPress = (selectedChoice) => {
         setSelectedAnswer(selectedChoice);
         const isCorrect = selectedChoice === currentQuestion.reponse;
 
-        if (isCorrect) {
+        if(isCorrect){
             setScore(score + 10);
-        } else {
-            const newLives = vies - 1;
-            setVies(newLives);
-
-            if (newLives === 0) {
+        }else{
+            setVies(vies - 1);
+            if (vies === 0) {
                 setTimeout(() => {
                 setIsFinished(true);
             }, 1000);
@@ -46,9 +54,9 @@ export default function LogiqueQuizVisuel({
     return(
         <View style={styles.container}>
             <Image source={currentQuestion.image}style={styles.image} />
-            <Text style={styles.question}>De qui s'agit il  sur l'image ?</Text>
+            <Text style={styles.question}>De qui s'agit il  sur cette photo ?</Text>
             <View style={styles.choicesContainer}>
-                {currentQuestion.choix.map((choice, index) => {
+                {shuffledChoices.map((choice, index) => {
 
                 let backgroundColor = 'white';
                 let textColor = 'black';

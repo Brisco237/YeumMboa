@@ -5,21 +5,27 @@ import Trait from '../../components/trait';
 import { colors } from '../../theme/color'
 import VieScore from "../../components/quiz-visuel/vie-score";
 import LogiqueQuizVisuel from "../../components/quiz-visuel/logique-quiz-visuel";
-import { quizData } from '../../data/question-photo';
-import PageResultat from "./resultat";
+import { quizData as originalQuizData } from '../../data/question-photo';
+import PageResultat from "../../components/quiz-visuel/resultat-quiz-visuel";
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+const shuffleArray = (array) => {
+  return array
+    .map((value) => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+};
 
 export default function QuizVisuel(){
     const [score, setScore] = useState(0);
     const [vies, setVies] = useState(3);
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [isFinished, setIsFinished] = useState(false);
+    const [quizData, setQuizData] = useState(shuffleArray(originalQuizData));
 
     if(isFinished){
         return(
-            <PageResultat 
-                quizData={quizData}
+            <PageResultat
                 currentQuestionIndex={currentQuestionIndex}
                 setCurrentQuestionIndex={setCurrentQuestionIndex}
                 score={score}
