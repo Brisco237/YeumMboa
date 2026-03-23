@@ -7,13 +7,16 @@ import { useRouter } from 'expo-router';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-export default function PageResultat({currentQuestionIndex,
-    setCurrentQuestionIndex,
-    score,setScore,
-    vies,setVies,setIsFinished,isFinished}){
+export default function PageResultat({
+    currentQuestionIndex,setCurrentQuestionIndex,score,setScore,
+    vies,setVies,setIsFinished,isFinished,
+    correctAnswers,
+    incorrectAnswers,message,onRestart
+    }){
     
     const router = useRouter();
-
+    const totalQuestions = currentQuestionIndex + 1;
+    const percentage = Math.round((correctAnswers / totalQuestions) * 100);
     return(
         <SafeAreaView style={styles.container}>
             <View style={styles.trophé}>
@@ -22,16 +25,16 @@ export default function PageResultat({currentQuestionIndex,
             <View style={styles.scorefinal}>
                 <Text style={styles.text}>VOTRE SCORE FINAL</Text>
                 <Text style={styles.score}>{score}</Text>
-                <Text style={styles.message}>Message de fin !!!</Text>
+                <Text style={styles.message}>{message}</Text>
             </View>
             <View style={styles.taux}>
                 <View style={styles.correct}>
                     <Text><AntDesign name="check-circle" style={styles.check} /></Text>
-                    <Text style={styles.reponsecorrect}>90 %</Text>
+                    <Text style={styles.reponsecorrect}>{percentage} %</Text>
                 </View>
                 <View style={styles.correct}>
                     <Text><Entypo name="heart" style={styles.heart}/></Text>
-                    <Text style={styles.reponsecorrect}> 0 / 3</Text>
+                    <Text style={styles.reponsecorrect}> {vies} / 3</Text>
                 </View>
             </View>
             <View style={styles.resume}>
@@ -41,25 +44,17 @@ export default function PageResultat({currentQuestionIndex,
                         <Entypo name="check" style={styles.check2} />
                         <Text style={styles.text2}>Réponse correct</Text>
                     </View>
-                    <Text style={styles.text2}>3</Text>
+                    <Text style={styles.text2}>{correctAnswers}</Text>
                 </View>
                 <View style={styles.resume2}>
                     <View style={styles.correct1}>
                         <Entypo name="cross" style={styles.cross} />
                         <Text style={styles.text2}>Réponse incorrect</Text>
                     </View>
-                    <Text style={styles.text2}>1</Text>
+                    <Text style={styles.text2}>{incorrectAnswers}</Text>
                 </View>
             </View>
-            <TouchableOpacity
-                onPress={() => {
-                    setScore(0);
-                    setVies(3);
-                    setCurrentQuestionIndex(0);
-                    setIsFinished(false);
-                }}
-                style={styles.bouttonrejouer}
-                >
+            <TouchableOpacity onPress={onRestart} style={styles.bouttonrejouer}>
                 <View style={styles.rejouer}>
                     <FontAwesome name="rotate-left" style={styles.rotate} />
                     <Text style={styles.text3}>Rejouer</Text>

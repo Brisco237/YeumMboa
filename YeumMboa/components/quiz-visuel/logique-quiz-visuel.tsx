@@ -13,12 +13,14 @@ export default function LogiqueQuizVisuel({
     currentQuestionIndex,
     setCurrentQuestionIndex,
     score,setScore,
-    vies,setVies,setIsFinished,isFinished}){
+    vies,setVies,setIsFinished,isFinished,
+    correctAnswers, setCorrectAnswers,
+    incorrectAnswers, setIncorrectAnswers}){
 
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const currentQuestion = quizData[currentQuestionIndex];
-    const [shuffledChoices, setShuffledChoices] = useState([]);
 
+    const [shuffledChoices, setShuffledChoices] = useState([]);
     useEffect(() => {
         const shuffled = shuffleArray(currentQuestion.choix);
         setShuffledChoices(shuffled);
@@ -30,8 +32,10 @@ export default function LogiqueQuizVisuel({
 
         if(isCorrect){
             setScore(score + 10);
+            setCorrectAnswers(correctAnswers + 1)
         }else{
             setVies(vies - 1);
+            setIncorrectAnswers(incorrectAnswers + 1);
             if (vies === 0) {
                 setTimeout(() => {
                 setIsFinished(true);
@@ -58,29 +62,29 @@ export default function LogiqueQuizVisuel({
             <View style={styles.choicesContainer}>
                 {shuffledChoices.map((choice, index) => {
 
-                let backgroundColor = 'white';
-                let textColor = 'black';
+                    let backgroundColor = 'white';
+                    let textColor = 'black';
 
-                if(selectedAnswer !== null) {
-                    if (choice === currentQuestion.reponse) {
-                        backgroundColor = colors['green'];
-                        textColor = 'white';
+                    if(selectedAnswer !== null) {
+                        if (choice === currentQuestion.reponse) {
+                            backgroundColor = colors['green'];
+                            textColor = 'white';
+                        }
+                        else if (choice === selectedAnswer) {
+                            backgroundColor = colors['red'];
+                            textColor = 'white';
+                        }
                     }
-                    else if (choice === selectedAnswer) {
-                        backgroundColor = colors['red'];
-                        textColor = 'white';
-                    }
-                }
 
-            return (
-                <TouchableOpacity key={index} style={[styles.button, { backgroundColor }]}
-                    onPress={() => handleAnswerPress(choice)}
-                    disabled={selectedAnswer !== null}
-                >
-                    <Text style={[styles.buttonText, { color: textColor }]}>{choice}</Text>
-                </TouchableOpacity>
-                );
-            })}
+                    return (
+                        <TouchableOpacity key={index} style={[styles.button, { backgroundColor }]}
+                            onPress={() => handleAnswerPress(choice)}
+                            disabled={selectedAnswer !== null}
+                        >
+                            <Text style={[styles.buttonText, { color: textColor }]}>{choice}</Text>
+                        </TouchableOpacity>
+                    );
+                })}
             </View>
         </View>
     );

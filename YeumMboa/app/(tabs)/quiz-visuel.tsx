@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ArrowLeft from "../../components/arrow-left";
 import Trait from '../../components/trait'; 
 import { colors } from '../../theme/color'
@@ -17,13 +17,23 @@ const shuffleArray = (array) => {
 };
 
 export default function QuizVisuel(){
+    // Vies et score
     const [score, setScore] = useState(0);
     const [vies, setVies] = useState(3);
+    // Questions actuel
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+    // Game over
     const [isFinished, setIsFinished] = useState(false);
+    // Mélange des questions
     const [quizData, setQuizData] = useState(shuffleArray(originalQuizData));
+    // nombres de réponses correct et incorrect
+    const [correctAnswers, setCorrectAnswers] = useState(0);
+    const [incorrectAnswers, setIncorrectAnswers] = useState(0);
+
+    const currentQuestion = quizData[currentQuestionIndex];
 
     if(isFinished){
+        const message = vies <= 0 ? "Vous avez perdu toutes vos vies !" : "Vous avez terminé le jeu !";
         return(
             <PageResultat
                 currentQuestionIndex={currentQuestionIndex}
@@ -34,6 +44,18 @@ export default function QuizVisuel(){
                 setVies={setVies}
                 isFinished={isFinished}
                 setIsFinished={setIsFinished}
+                correctAnswers={correctAnswers}
+                incorrectAnswers={incorrectAnswers}
+                message={message}
+                onRestart={() => {
+                    setScore(0);
+                    setVies(3);
+                    setCorrectAnswers(0);
+                    setIncorrectAnswers(0);
+                    setCurrentQuestionIndex(0);
+                    setQuizData(shuffleArray(originalQuizData)); 
+                    setIsFinished(false);
+                }}
             />
         );
     }
@@ -61,6 +83,10 @@ export default function QuizVisuel(){
                         setVies={setVies}
                         isFinished={isFinished}
                         setIsFinished={setIsFinished}
+                        correctAnswers={correctAnswers}
+                        setCorrectAnswers={setCorrectAnswers}
+                        incorrectAnswers={incorrectAnswers}
+                        setIncorrectAnswers={setIncorrectAnswers}
                     />
                 </View>
             </ScrollView>
