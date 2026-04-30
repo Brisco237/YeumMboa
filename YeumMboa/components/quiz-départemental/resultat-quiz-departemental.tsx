@@ -8,7 +8,7 @@ import Fontisto from '@expo/vector-icons/Fontisto';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 
-export default function PageResultat({score,message,onRestart,vies,correctAnswers,incorrectAnswers}){ 
+export default function PageResultat({score,message,onRestart,correctAnswers,incorrectAnswers}){ 
     const router = useRouter();
     const maxScore = 10 * 58;
     const percentage = Math.round((score / maxScore) * 100);
@@ -28,8 +28,8 @@ export default function PageResultat({score,message,onRestart,vies,correctAnswer
                     <Text style={styles.reponsecorrect}>{percentage} %</Text>
                 </View>
                 <View style={styles.correct}>
-                    <Text><Entypo name="heart" style={styles.heart}/></Text>
-                    <Text style={styles.reponsecorrect}> {vies} / 3</Text>
+                    <Text><AntDesign name="calculator" style={styles.calculate}/></Text>
+                    <Text style={styles.reponsecorrect}>{correctAnswers} / 58</Text>
                 </View>
             </View>
             <View style={styles.resume}>
@@ -123,6 +123,10 @@ const styles = StyleSheet.create({
     },
     check:{
         color:colors['green'],
+        fontSize:20,
+    },
+    calculate:{
+        color:colors['blue'],
         fontSize:20,
     },
     resume:{

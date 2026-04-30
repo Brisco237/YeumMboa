@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 const { width: screenWidth } = Dimensions.get('window');
 
 export default function CarteDepartemental(
-  {currentRegion,score,setScore,vies,setVies,
+  {currentRegion,score,setScore,
     gameOver,setRemainingRegions,remainingRegions,
     setGameOver,setCurrentRegion,setSelectedRegion,
     showAnswer,setShowAnswer,selectedRegion,setCorrectAnswers,
@@ -38,7 +38,6 @@ export default function CarteDepartemental(
       setScore(score + 10);
       setCorrectAnswers(correctAnswers + 1); 
     }else{
-      setVies(vies - 1);
       setIncorrectAnswers(incorrectAnswers + 1);
     }
 
@@ -48,7 +47,7 @@ export default function CarteDepartemental(
 
     // Passer à la prochaine question après 1.5 sec
     setTimeout(() => {
-      if (vies - (departement.name !== currentRegion.name ? 1 : 0) <= 0 || remainingRegions.length <= 1) {
+      if (remainingRegions.length <= 1) {
         setGameOver(true); // fin du quiz
       } else {
         // Tirer une nouvelle région parmi celles restantes

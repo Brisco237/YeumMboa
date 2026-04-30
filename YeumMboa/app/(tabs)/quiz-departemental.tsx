@@ -12,9 +12,8 @@ import { DEPARTEMENTS_CAMEROUN } from '../../data/departements_cameroun';
 import PageResultat from '../../components/quiz-départemental/resultat-quiz-departemental';
 
 export default function QuizDepartemental() {
-  // Vie et score
+  // Score
   const [score, setScore] = useState(0);
-  const [vies, setVies] = useState(3);
   // Question Actuel
   const [currentRegion, setCurrentRegion] = useState(null);
   // Région choisi
@@ -36,17 +35,15 @@ export default function QuizDepartemental() {
   };
 
   if(gameOver){
-      const message = vies <= 0 ? "Vous avez perdu toutes vos vies !" : "Vous avez terminé les 58 départements !";
+      const message = "Vous avez terminé les 58 départements !";
       return(
         <PageResultat
           score={score}
-          vies={vies}
           message={message}
           correctAnswers={correctAnswers}
           incorrectAnswers={incorrectAnswers}
           onRestart={() => {
             setScore(0);
-            setVies(3);
             setRemainingRegions([...DEPARTEMENTS_CAMEROUN]);
             setCurrentRegion(getRandomRegion([...DEPARTEMENTS_CAMEROUN]));
             setQuestionNumber(0)
@@ -68,15 +65,13 @@ export default function QuizDepartemental() {
         <Text style={styles.title}>Quiz Départemental</Text>
       </View>
       <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
-        <VieScore vies={vies} score={score} />
+        <VieScore score={score} questionNumber={questionNumber} />
         <ProgressBarDepartement
           currentRegion={currentRegion}
           questionNumber={questionNumber}
         />
         <CarteDepartemental
             currentRegion={currentRegion}
-            vies={vies}
-            setVies={setVies}
             score={score}
             setScore={setScore}
             gameOver={gameOver}

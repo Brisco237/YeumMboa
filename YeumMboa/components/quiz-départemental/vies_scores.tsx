@@ -1,17 +1,14 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { colors } from '../../theme/color';
-import Entypo from '@expo/vector-icons/Entypo';
 
-export default function VieScore({vies,score}){
+export default function VieScore({score, questionNumber}){
     return(
         <View>
             <View style={styles.container}>
-                <View style={styles.vies}>
-                    <Text style={styles.textvie}>Vies : </Text>
-                    <View style={styles.heartsContainer}>
-                        {Array.from({length: vies}).map((_, i) => (
-                            <Entypo key={i} name="heart" style={styles.heart}/>
-                        ))}
+                <View style={styles.progression}>
+                    <Text style={styles.textprogression}>Questions : </Text>
+                    <View style={styles.progressContainer}>
+                        <Text style={styles.progressText}>{questionNumber} / 58</Text>
                     </View>
                 </View>
                 <View style={styles.score}>
@@ -31,21 +28,25 @@ const styles = StyleSheet.create({
         justifyContent:'space-between',
         alignItems:'center'
     },
-    vies:{
+    progression:{
         flexDirection:'row',
         gap:5,
         alignItems:'center',
     },
-    heartsContainer:{
+    progressContainer:{
         flexDirection:'row',
         gap:3,
+        backgroundColor:'white',
+        padding:8,
+        borderRadius:8,
     },
-    textvie:{
+    textprogression:{
         fontFamily:'Montserrat-Bold',
     },
-    heart:{
-        color:colors['red'],
-        fontSize:18,
+    progressText:{
+        fontFamily:'PlusJakartaSans-Bold',
+        fontSize:12,
+        color:colors['green'],
     },
     /* Score */
     score:{
