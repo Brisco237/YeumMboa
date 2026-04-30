@@ -7,11 +7,26 @@ import { useRouter } from 'expo-router';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+const getFeedbackMessage = (score) => {
+  if (score >= 522) {
+    return "🔥 Impressionnant ! Un score de génie. Vous maîtrisez le sujet sur le bout des doigts. Félicitations pour cette performance d'élite !";
+  } else if (score >= 435) {
+    return "🚀 Excellent travail ! Vous avez une très bonne compréhension du sujet. Quelques petites erreurs, mais c'est une performance solide.";
+  } else if (score >= 290) {
+    return "✅ Bien joué ! Vous avez de bonnes bases. Avec un peu plus d'entraînement, vous atteindrez le niveau supérieur.";
+  } else if (score >= 145) {
+    return "💡 Pas mal ! Un bon début, mais il y a encore de la place pour l'apprentissage. Relisez les corrections pour progresser !";
+  } else {
+    return "📚 C'était un défi ! Ne vous découragez pas. Considérez cela comme une première découverte et replongez dans le sujet.";
+  }
+};
 
 export default function PageResultat({score,message,onRestart,correctAnswers,incorrectAnswers}){ 
     const router = useRouter();
     const maxScore = 10 * 58;
     const percentage = Math.round((score / maxScore) * 100);
+    const feedbackMessage = getFeedbackMessage(score);
+    
     return(
         <SafeAreaView style={styles.container}>
             <View style={styles.trophé}>
@@ -20,7 +35,7 @@ export default function PageResultat({score,message,onRestart,correctAnswers,inc
             <View style={styles.scorefinal}>
                 <Text style={styles.text}>VOTRE SCORE FINAL</Text>
                 <Text style={styles.score}>{score}</Text>
-                <Text style={styles.message}>{message}</Text>
+                <Text style={styles.message}>{feedbackMessage}</Text>
             </View>
             <View style={styles.taux}>
                 <View style={styles.correct}>
@@ -28,7 +43,7 @@ export default function PageResultat({score,message,onRestart,correctAnswers,inc
                     <Text style={styles.reponsecorrect}>{percentage} %</Text>
                 </View>
                 <View style={styles.correct}>
-                    <Text><AntDesign name="calculator" style={styles.calculate}/></Text>
+                    <Text><AntDesign name="carry-out" style={styles.calculate}/></Text>
                     <Text style={styles.reponsecorrect}>{correctAnswers} / 58</Text>
                 </View>
             </View>
@@ -98,7 +113,8 @@ const styles = StyleSheet.create({
         backgroundColor:'white',
         padding:15,
         borderRadius:10,
-        marginTop:10
+        marginTop:10,
+        textAlign:'center',
     },
     taux:{
         flexDirection:'row',
@@ -126,7 +142,7 @@ const styles = StyleSheet.create({
         fontSize:20,
     },
     calculate:{
-        color:colors['blue'],
+        color:colors['green'],
         fontSize:20,
     },
     resume:{
