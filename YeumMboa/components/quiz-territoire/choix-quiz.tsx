@@ -55,10 +55,10 @@ export default function ChoixQuiz(){
                     connaissance des 360 arrondissements du Cameroun.</Text>
                 <View style={styles.boxfoot}>
                     <Text style={styles.level}>Niveau : Expert</Text>
-                    <View style={styles.button}>
+                    <TouchableOpacity style={styles.button} onPress={() => router.push('/quiz-arrondissement')}>
                         <Text style={styles.demarrer}>Démarrer</Text>
                         <FontAwesome name="play" style={styles.iconstart} />
-                    </View>
+                    </TouchableOpacity>
                 </View>
             </View>
 

@@ -13,6 +13,7 @@ export default function TabsLayout() {
       <Stack.Screen name="resultat" options={{ title: 'Resultat' }} />
       <Stack.Screen name="quiz-regional" options={{ title: 'Quiz-regional' }} />
       <Stack.Screen name="quiz-departemental" options={{ title: 'Quiz-départemental' }} />
+      <Stack.Screen name="quiz-arrondissement" options={{ title: 'Quiz-arrondissement' }} />
     </Stack>
   );
 }

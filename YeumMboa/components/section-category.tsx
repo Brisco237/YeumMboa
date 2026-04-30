@@ -34,7 +34,7 @@ export default function SectionCategory() {
                 <View style={styles.theme}>
                     <FontAwesome6 name="location-dot" style={styles.localisation} />
                     <Text style={styles.themename}>Lieux de mémoire</Text>
-                    <Text style={styles.descriptheme}>Indication sur la carte</Text>
+                    <Text style={styles.descriptheme}>Mémorial</Text>
                 </View>
                 <View style={styles.theme}>
                     <FontAwesome name="bank" style={styles.museum} />
@@ -93,6 +93,7 @@ const styles = StyleSheet.create({
     descriptheme:{
         fontFamily:'PlusJakartaSans-Regular',
         marginTop:5,
+        textAlign:'center'
     },
     img:{
         color: colors["red"],
