@@ -10,7 +10,7 @@ export default function QuizArrondissement(){
         <SafeAreaView style={styles.container}>
             <View style={styles.head}>
                 <ArrowLeft/>
-                <Text style={styles.title}>Quiz Arrondissement</Text>
+                <Text style={styles.title}>Quiz arrondissement</Text>
             </View>
         </SafeAreaView>
     )
