@@ -1431,12 +1431,42 @@ export const  ARRONDISSEMENTS = [
         departement_id: "sanaga-maritime",
         departement_name: "sanaga-maritime",
     },
-    // Les arrondissements du département 
+    // Les 6 arrondissements du département du Wouri
     {
         id:232,
-        name: '',
-        departement_id: "",
-        departement_name: "",
+        name: 'Douala I',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
+    },
+    {
+        id:233,
+        name: 'Douala II',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
+    },
+    {
+        id:234,
+        name: 'Douala III',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
+    },
+    {
+        id:235,
+        name: 'Douala IV',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
+    },
+    {
+        id:236,
+        name: 'Douala V',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
+    },
+    {
+        id:237,
+        name: 'Douala VI',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
     },
 
 ]
