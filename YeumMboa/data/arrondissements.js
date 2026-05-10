@@ -1284,7 +1284,8 @@ export const  ARRONDISSEMENTS = [
         name: 'Matomb',
         departement_id: "nyong-et-kéllé",
         departement_name: "nyong-et-kéllé",
-    },{
+    },
+    {
         id:208,
         name: 'Dibang',
         departement_id: "nyong-et-kéllé",
@@ -1295,7 +1296,8 @@ export const  ARRONDISSEMENTS = [
         name: 'Biyouha',
         departement_id: "nyong-et-kéllé",
         departement_name: "nyong-et-kéllé",
-    },{
+    },
+    {
         id:210,
         name: 'Bondjock',
         departement_id: "nyong-et-kéllé",
@@ -1307,7 +1309,63 @@ export const  ARRONDISSEMENTS = [
         departement_id: "nyong-et-kéllé",
         departement_name: "nyong-et-kéllé",
     },
-
+    // Les 9 arrondissements du département du Mbam et Inoubou
+    {
+        id:212,
+        name: 'Bafia',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:213,
+        name: 'Bokito',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:214,
+        name: 'Ndikiniméki',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:215,
+        name: 'Ombessa',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:216,
+        name: 'Deuk',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:217,
+        name: 'Makénéné',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:218,
+        name: 'Kiiki',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:219,
+        name: 'Kon-Yambetta',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:220,
+        name: 'Nitoukou',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    
+    
 
 
 
