@@ -1364,23 +1364,79 @@ export const  ARRONDISSEMENTS = [
         departement_id: "mbam-et-inoubou",
         departement_name: "mbam-et-inoubou",
     },
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // Les 11 arrondissements du département de la Sanaga-Maritime
+    {
+        id:221,
+        name: '	Dibamba',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:222,
+        name: 'Dizangué',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:223,
+        name: '	Édéa Ier',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:224,
+        name: '	Édéa IIe',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:225,
+        name: 'Massock-Songloulou',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:226,
+        name: 'Mouanko',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:227,
+        name: '	Ndom',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:228,
+        name: 'Ngambe',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:229,
+        name: '	Ngwei',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:230,
+        name: '	Nyanon',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:231,
+        name: 'Pouma',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    // Les arrondissements du département 
+    {
+        id:232,
+        name: '',
+        departement_id: "",
+        departement_name: "",
+    },
 
 ]
