@@ -1493,5 +1493,84 @@ export const  ARRONDISSEMENTS = [
         departement_id: "nkam",
         departement_name: "nkam",
     },
+    // Les 13 arrondissements du Moungo
+    {
+        id:242,
+        name: 'Nkongsamba I',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:243,
+        name: 'Mbanga',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:244,
+        name: 'Dibombari',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:245,
+        name: 'Manjo',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:246,
+        name: 'Mélong',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:247,
+        name: 'Loum',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:248,
+        name: 'Baré-Bakem',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:249,
+        name: 'Nlonako',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:250,
+        name: 'Njombé-Penja',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:251,
+        name: 'Nkongsamba II',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:252,
+        name: 'Nkongsamba III',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:253,
+        name: 'Abo Fiko',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:254,
+        name: 'Mombo',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
 
 ]
