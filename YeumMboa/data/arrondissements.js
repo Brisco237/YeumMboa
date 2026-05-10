@@ -1125,6 +1125,75 @@ export const  ARRONDISSEMENTS = [
         departement_id: "nyong-et-so'o",
         departement_name: "nyong-et-so'o"
     },
+    // les 4 arrondissements du département la Mefou et Akono
+    {
+        id:182,
+        name: 'Ngoumou',
+        departement_id: "mefou-et-akono",
+        departement_name: "mefou-et-akono",
+    },
+    {
+        id:183,
+        name: 'Akono',
+        departement_id: "mefou-et-akono",
+        departement_name: "mefou-et-akono",
+    },
+    {
+        id:184,
+        name: 'Mbankomo',
+        departement_id: "mefou-et-akono",
+        departement_name: "mefou-et-akono",
+    },
+    {
+        id:185,
+        name: 'Bikok',
+        departement_id: "mefou-et-akono",
+        departement_name: "mefou-et-akono",
+    },
+    // Les 7 arrondissements du département du Mfoundi
+    {
+        id:186,
+        name: 'Yaoundé 1',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:187,
+        name: 'Yaoundé 2',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:188,
+        name: 'Yaoundé 3',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:189,
+        name: 'Yaoundé 4',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:190,
+        name: 'Yaoundé 5',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:191,
+        name: 'Yaoundé 6',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:192,
+        name: 'Yaoundé 7',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+
 
 
 
