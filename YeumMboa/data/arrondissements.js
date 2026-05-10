@@ -1597,5 +1597,23 @@ export const  ARRONDISSEMENTS = [
         departement_id: "ndé",
         departement_name: "ndé",
     },
-
+    // Les 3 arrondissements du département du Koung-Khi
+    {
+        id:259,
+        name: 'Bayangam',
+        departement_id: "koung-khi",
+        departement_name: "koung-khi",
+    },
+    {
+        id:260,
+        name: 'Poumougne',
+        departement_id: "koung-khi",
+        departement_name: "koung-khi",
+    },
+    {
+        id:261,
+        name: 'Djebem',
+        departement_id: "koung-khi",
+        departement_name: "koung-khi",
+    },
 ]
