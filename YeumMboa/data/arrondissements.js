@@ -1248,14 +1248,65 @@ export const  ARRONDISSEMENTS = [
         departement_id: "lékié",
         departement_name: "lékié",
     },    
-    // Les arrondissements du département
+    // Les 10 arrondissements du département du Nyong et Kéllé
     {
-        id:194,
-        name: '',
-        departement_id: "",
-        departement_name: "",
+        id:202,
+        name: 'Eséka',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
     },
-
+    {
+        id:203,
+        name: 'Makak',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:204,
+        name: 'Bot-Makak',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:205,
+        name: 'Messondo',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:206,
+        name: 'Ngog-Mapubi',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:207,
+        name: 'Matomb',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },{
+        id:208,
+        name: 'Dibang',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:209,
+        name: 'Biyouha',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },{
+        id:210,
+        name: 'Bondjock',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:211,
+        name: 'Nguibassal',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
 
 
 
