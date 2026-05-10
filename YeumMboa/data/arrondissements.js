@@ -1616,4 +1616,29 @@ export const  ARRONDISSEMENTS = [
         departement_id: "koung-khi",
         departement_name: "koung-khi",
     },
+    // Les 4 arrondissements du département des Hauts-Plateaux
+    {
+        id:262,
+        name: 'Baham',
+        departement_id: "hauts-plateaux",
+        departement_name: "hauts-plateaux",
+    },
+    {
+        id:263,
+        name: 'Bamendjou',
+        departement_id: "hauts-plateaux",
+        departement_name: "hauts-plateaux",
+    },
+    {
+        id:264,
+        name: 'Bangou',
+        departement_id: "hauts-plateaux",
+        departement_name: "hauts-plateaux",
+    },
+    {
+        id:265,
+        name: 'Batié',
+        departement_id: "hauts-plateaux",
+        departement_name: "hauts-plateaux",
+    },
 ]
