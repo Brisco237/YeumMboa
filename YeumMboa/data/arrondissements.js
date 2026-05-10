@@ -1468,5 +1468,30 @@ export const  ARRONDISSEMENTS = [
         departement_id: "Wouri",
         departement_name: "Wouri",
     },
+    // Les 4 arrondissements du département du Nkam
+    {
+        id:238,
+        name: 'Nkondjock',
+        departement_id: "nkam",
+        departement_name: "nkam",
+    },
+    {
+        id:239,
+        name: 'Nord-Makombé',
+        departement_id: "nkam",
+        departement_name: "nkam",
+    },
+    {
+        id:240,
+        name: 'Yabassi',
+        departement_id: "nkam",
+        departement_name: "nkam",
+    },
+    {
+        id:241,
+        name: 'Yingui',
+        departement_id: "nkam",
+        departement_name: "nkam",
+    },
 
 ]
