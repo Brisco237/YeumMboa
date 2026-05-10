@@ -1572,5 +1572,30 @@ export const  ARRONDISSEMENTS = [
         departement_id: "moungo",
         departement_name: "moungo",
     },
+    // Les 4 arrondissements du département du Ndé
+    {
+        id:255,
+        name: 'Bangangté',
+        departement_id: "ndé",
+        departement_name: "ndé",
+    },
+    {
+        id:256,
+        name: 'Bazou',
+        departement_id: "ndé",
+        departement_name: "ndé",
+    },
+    {
+        id:257,
+        name: 'Tonga',
+        departement_id: "ndé",
+        departement_name: "ndé",
+    },
+    {
+        id:258,
+        name: 'Bassamba',
+        departement_id: "ndé",
+        departement_name: "ndé",
+    },
 
 ]
