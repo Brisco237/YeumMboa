@@ -1193,12 +1193,68 @@ export const  ARRONDISSEMENTS = [
         departement_id: "mfoundi",
         departement_name: "mfoundi",
     },
-
-
-
-
-
-
+    // Les 9 arrondissements du département de la Lékié
+    {
+        id:193,
+        name: 'Batchenga',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },    
+    {
+        id:194,
+        name: 'Ebebda',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    }, 
+    {
+        id:195,
+        name: 'Elig-Mfomo',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },    
+    {
+        id:196,
+        name: 'Evodoula',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },
+    {
+        id:197,
+        name: 'Lobo',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },    
+    {
+        id:198,
+        name: 'Monatélé',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },
+    {
+        id:199,
+        name: 'Obala',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },    
+    {
+        id:200,
+        name: 'Okola',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },
+    {
+        id:201,
+        name: "Sa'a",
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },    
+    // Les arrondissements du département
+    {
+        id:194,
+        name: '',
+        departement_id: "",
+        departement_name: "",
+    },
 
 
 
