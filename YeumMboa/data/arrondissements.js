@@ -1889,5 +1889,47 @@ export const  ARRONDISSEMENTS = [
         departement_id: "meme",
         departement_name: "meme",
     },
-    
+    // Les 7 arrondissements du départements de Fako
+    {
+        id:306,
+        name: 'Limbé Ier',
+        departement_id: "fako",
+        departement_name: "fako",
+    },
+    {
+        id:307,
+        name: 'Buéa',
+        departement_id: "fako",
+        departement_name: "fako",
+    },
+    {
+        id:308,
+        name: 'Tiko',
+        departement_id: "fako",
+        departement_name: "fako",
+    },
+    {
+        id:309,
+        name: 'Muyuka',
+        departement_id: "fako",
+        departement_name: "fako",
+    },
+    {
+        id:310,
+        name: '	Limbé II',
+        departement_id: "fako",
+        departement_name: "fako",
+    },
+    {
+        id:311,
+        name: 'Limbé III',
+        departement_id: "fako",
+        departement_name: "fako",
+    },
+    {
+        id:312,
+        name: 'West Coast',
+        departement_id: "fako",
+        departement_name: "fako",
+    },
 ] 
