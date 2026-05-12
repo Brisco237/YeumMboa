@@ -2111,4 +2111,29 @@ export const  ARRONDISSEMENTS = [
         departement_id: "menchum",
         departement_name: "menchum",
     },
+    // Les 4 arrondissements du département de Boyo
+    {
+        id:342,
+        name: 'Belo',
+        departement_id: "boyo",
+        departement_name: "boyo",
+    },
+    {
+        id:343,
+        name: 'Fonfuka',
+        departement_id: "boyo",
+        departement_name: "boyo",
+    },
+    {
+        id:344,
+        name: 'Fundong',
+        departement_id: "boyo",
+        departement_name: "boyo",
+    },
+    {
+        id:345,
+        name: 'Njinikom',
+        departement_id: "boyo",
+        departement_name: "boyo",
+    },
 ] 
