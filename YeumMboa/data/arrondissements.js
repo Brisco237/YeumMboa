@@ -2204,4 +2204,23 @@ export const  ARRONDISSEMENTS = [
         departement_id: "donga-mantung",
         departement_name: "donga-mantung",
     },
+    // Les 3 arrondissements du département de Ngo-Ketunjia
+    {
+        id:357,
+        name: 'Ndop',
+        departement_id: "ngo-ketunjia",
+        departement_name: "ngo-ketunjia",
+    },
+    {
+        id:358,
+        name: 'Babessi',
+        departement_id: "ngo-ketunjia",
+        departement_name: "ngo-ketunjia",
+    },
+    {
+        id:359,
+        name: 'Balikumbat',
+        departement_id: "ngo-ketunjia",
+        departement_name: "ngo-ketunjia",
+    },
 ] 
