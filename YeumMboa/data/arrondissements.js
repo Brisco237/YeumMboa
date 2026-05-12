@@ -2043,4 +2043,47 @@ export const  ARRONDISSEMENTS = [
         departement_id: "momo",
         departement_name: "momo",
     },
+    // Les 7 arrondissements du département de Mezam
+    {
+        id:331,
+        name: 'Bafut',
+        departement_id: "mezam",
+        departement_name: "mezam",
+    },
+    {
+        id:332,
+        name: 'Bali',
+        departement_id: "mezam",
+        departement_name: "mezam",
+    },
+    {
+        id:333,
+        name: 'Bamenda Ier',
+        departement_id: "mezam",
+        departement_name: "mezam",
+    },
+    {
+        id:334,
+        name: 'Bamenda IIe',
+        departement_id: "mezam",
+        departement_name: "mezam",
+    },
+    {
+        id:335,
+        name: 'Bamenda IIIe',
+        departement_id: "mezam",
+        departement_name: "mezam",
+    },
+    {
+        id:336,
+        name: 'Santa',
+        departement_id: "mezam",
+        departement_name: "mezam",
+    },
+    {
+        id:337,
+        name: 'Tubah',
+        departement_id: "mezam",
+        departement_name: "mezam",
+    },
 ] 
