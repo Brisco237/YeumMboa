@@ -2086,4 +2086,29 @@ export const  ARRONDISSEMENTS = [
         departement_id: "mezam",
         departement_name: "mezam",
     },
+    // Les 4 arrondissements du département de la Menchum
+    {
+        id:338,
+        name: 'Benakuma',
+        departement_id: "menchum",
+        departement_name: "menchum",
+    },
+    {
+        id:339,
+        name: 'Furu-Awa',
+        departement_id: "menchum",
+        departement_name: "menchum",
+    },
+    {
+        id:340,
+        name: 'Wum',
+        departement_id: "menchum",
+        departement_name: "menchum",
+    },
+    {
+        id:341,
+        name: 'Zhoa',
+        departement_id: "menchum",
+        departement_name: "menchum",
+    },
 ] 
