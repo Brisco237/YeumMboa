@@ -1858,4 +1858,36 @@ export const  ARRONDISSEMENTS = [
         departement_id: "koupé-manengouba",
         departement_name: "koupé-manengouba",
     },
-]
+    // Les 5 arrondissements du départements de Meme
+    {
+        id:301,
+        name: '	Konye',
+        departement_id: "meme",
+        departement_name: "meme",
+    },
+    {
+        id:302,
+        name: 'Kumba Ier',
+        departement_id: "meme",
+        departement_name: "meme",
+    },
+    {
+        id:303,
+        name: '	Kumba IIe',
+        departement_id: "meme",
+        departement_name: "meme",
+    },
+    {
+        id:304,
+        name: 'Kumba IIIe',
+        departement_id: "meme",
+        departement_name: "meme",
+    },
+    {
+        id:305,
+        name: 'Mbonge',
+        departement_id: "meme",
+        departement_name: "meme",
+    },
+    
+] 
