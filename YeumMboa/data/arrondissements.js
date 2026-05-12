@@ -1740,4 +1740,29 @@ export const  ARRONDISSEMENTS = [
         departement_id: "menoua",
         departement_name: "menoua",
     },
+    // Les 4 arrondissements du département de Bamboutos
+    {
+        id:282,
+        name: 'Mbouda',
+        departement_id: "bamboutos",
+        departement_name: "bamboutos",
+    },
+    {
+        id:283,
+        name: 'Batcham',
+        departement_id: "bamboutos",
+        departement_name: "bamboutos",
+    },
+    {
+        id:284,
+        name: 'Galim',
+        departement_id: "bamboutos",
+        departement_name: "bamboutos",
+    },
+    {
+        id:285,
+        name: 'Babadjou',
+        departement_id: "bamboutos",
+        departement_name: "bamboutos",
+    },
 ]
