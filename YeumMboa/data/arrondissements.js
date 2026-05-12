@@ -1765,4 +1765,59 @@ export const  ARRONDISSEMENTS = [
         departement_id: "bamboutos",
         departement_name: "bamboutos",
     },
+    // Les 9 arrondissements du département du Noun
+    {
+        id:286,
+        name: 'Foumban',
+        departement_id: "noun",
+        departement_name: "noun",
+    },
+    {
+        id:287,
+        name: 'Bangourain',
+        departement_id: "noun",
+        departement_name: "noun",
+    },
+    {
+        id:288,
+        name: 'Foumbot',
+        departement_id: "noun",
+        departement_name: "noun",
+    },
+    {
+        id:289,
+        name: '	Kouoptamo',
+        departement_id: "noun",
+        departement_name: "noun",
+    },
+    {
+        id:290,
+        name: 'Koutaba',
+        departement_id: "noun",
+        departement_name: "noun",
+    },
+    {
+        id:291,
+        name: 'Magba',
+        departement_id: "noun",
+        departement_name: "noun",
+    },
+    {
+        id:292,
+        name: '	Malentouen',
+        departement_id: "noun",
+        departement_name: "noun",
+    },
+    {
+        id:293,
+        name: 'Massangam',
+        departement_id: "noun",
+        departement_name: "noun",
+    },
+    {
+        id:294,
+        name: '	Njimom',
+        departement_id: "noun",
+        departement_name: "noun",
+    },
 ]
