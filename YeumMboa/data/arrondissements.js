@@ -1125,28 +1125,520 @@ export const  ARRONDISSEMENTS = [
         departement_id: "nyong-et-so'o",
         departement_name: "nyong-et-so'o"
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // les 4 arrondissements du département la Mefou et Akono
+    {
+        id:182,
+        name: 'Ngoumou',
+        departement_id: "mefou-et-akono",
+        departement_name: "mefou-et-akono",
+    },
+    {
+        id:183,
+        name: 'Akono',
+        departement_id: "mefou-et-akono",
+        departement_name: "mefou-et-akono",
+    },
+    {
+        id:184,
+        name: 'Mbankomo',
+        departement_id: "mefou-et-akono",
+        departement_name: "mefou-et-akono",
+    },
+    {
+        id:185,
+        name: 'Bikok',
+        departement_id: "mefou-et-akono",
+        departement_name: "mefou-et-akono",
+    },
+    // Les 7 arrondissements du département du Mfoundi
+    {
+        id:186,
+        name: 'Yaoundé 1',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:187,
+        name: 'Yaoundé 2',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:188,
+        name: 'Yaoundé 3',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:189,
+        name: 'Yaoundé 4',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:190,
+        name: 'Yaoundé 5',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:191,
+        name: 'Yaoundé 6',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    {
+        id:192,
+        name: 'Yaoundé 7',
+        departement_id: "mfoundi",
+        departement_name: "mfoundi",
+    },
+    // Les 9 arrondissements du département de la Lékié
+    {
+        id:193,
+        name: 'Batchenga',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },    
+    {
+        id:194,
+        name: 'Ebebda',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    }, 
+    {
+        id:195,
+        name: 'Elig-Mfomo',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },    
+    {
+        id:196,
+        name: 'Evodoula',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },
+    {
+        id:197,
+        name: 'Lobo',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },    
+    {
+        id:198,
+        name: 'Monatélé',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },
+    {
+        id:199,
+        name: 'Obala',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },    
+    {
+        id:200,
+        name: 'Okola',
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },
+    {
+        id:201,
+        name: "Sa'a",
+        departement_id: "lékié",
+        departement_name: "lékié",
+    },    
+    // Les 10 arrondissements du département du Nyong et Kéllé
+    {
+        id:202,
+        name: 'Eséka',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:203,
+        name: 'Makak',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:204,
+        name: 'Bot-Makak',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:205,
+        name: 'Messondo',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:206,
+        name: 'Ngog-Mapubi',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:207,
+        name: 'Matomb',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:208,
+        name: 'Dibang',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:209,
+        name: 'Biyouha',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:210,
+        name: 'Bondjock',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    {
+        id:211,
+        name: 'Nguibassal',
+        departement_id: "nyong-et-kéllé",
+        departement_name: "nyong-et-kéllé",
+    },
+    // Les 9 arrondissements du département du Mbam et Inoubou
+    {
+        id:212,
+        name: 'Bafia',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:213,
+        name: 'Bokito',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:214,
+        name: 'Ndikiniméki',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:215,
+        name: 'Ombessa',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:216,
+        name: 'Deuk',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:217,
+        name: 'Makénéné',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:218,
+        name: 'Kiiki',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:219,
+        name: 'Kon-Yambetta',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    {
+        id:220,
+        name: 'Nitoukou',
+        departement_id: "mbam-et-inoubou",
+        departement_name: "mbam-et-inoubou",
+    },
+    // Les 11 arrondissements du département de la Sanaga-Maritime
+    {
+        id:221,
+        name: '	Dibamba',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:222,
+        name: 'Dizangué',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:223,
+        name: '	Édéa Ier',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:224,
+        name: '	Édéa IIe',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:225,
+        name: 'Massock-Songloulou',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:226,
+        name: 'Mouanko',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:227,
+        name: '	Ndom',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:228,
+        name: 'Ngambe',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:229,
+        name: '	Ngwei',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:230,
+        name: '	Nyanon',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    {
+        id:231,
+        name: 'Pouma',
+        departement_id: "sanaga-maritime",
+        departement_name: "sanaga-maritime",
+    },
+    // Les 6 arrondissements du département du Wouri
+    {
+        id:232,
+        name: 'Douala I',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
+    },
+    {
+        id:233,
+        name: 'Douala II',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
+    },
+    {
+        id:234,
+        name: 'Douala III',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
+    },
+    {
+        id:235,
+        name: 'Douala IV',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
+    },
+    {
+        id:236,
+        name: 'Douala V',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
+    },
+    {
+        id:237,
+        name: 'Douala VI',
+        departement_id: "Wouri",
+        departement_name: "Wouri",
+    },
+    // Les 4 arrondissements du département du Nkam
+    {
+        id:238,
+        name: 'Nkondjock',
+        departement_id: "nkam",
+        departement_name: "nkam",
+    },
+    {
+        id:239,
+        name: 'Nord-Makombé',
+        departement_id: "nkam",
+        departement_name: "nkam",
+    },
+    {
+        id:240,
+        name: 'Yabassi',
+        departement_id: "nkam",
+        departement_name: "nkam",
+    },
+    {
+        id:241,
+        name: 'Yingui',
+        departement_id: "nkam",
+        departement_name: "nkam",
+    },
+    // Les 13 arrondissements du Moungo
+    {
+        id:242,
+        name: 'Nkongsamba I',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:243,
+        name: 'Mbanga',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:244,
+        name: 'Dibombari',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:245,
+        name: 'Manjo',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:246,
+        name: 'Mélong',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:247,
+        name: 'Loum',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:248,
+        name: 'Baré-Bakem',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:249,
+        name: 'Nlonako',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:250,
+        name: 'Njombé-Penja',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:251,
+        name: 'Nkongsamba II',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:252,
+        name: 'Nkongsamba III',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:253,
+        name: 'Abo Fiko',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    {
+        id:254,
+        name: 'Mombo',
+        departement_id: "moungo",
+        departement_name: "moungo",
+    },
+    // Les 4 arrondissements du département du Ndé
+    {
+        id:255,
+        name: 'Bangangté',
+        departement_id: "ndé",
+        departement_name: "ndé",
+    },
+    {
+        id:256,
+        name: 'Bazou',
+        departement_id: "ndé",
+        departement_name: "ndé",
+    },
+    {
+        id:257,
+        name: 'Tonga',
+        departement_id: "ndé",
+        departement_name: "ndé",
+    },
+    {
+        id:258,
+        name: 'Bassamba',
+        departement_id: "ndé",
+        departement_name: "ndé",
+    },
+    // Les 3 arrondissements du département du Koung-Khi
+    {
+        id:259,
+        name: 'Bayangam',
+        departement_id: "koung-khi",
+        departement_name: "koung-khi",
+    },
+    {
+        id:260,
+        name: 'Poumougne',
+        departement_id: "koung-khi",
+        departement_name: "koung-khi",
+    },
+    {
+        id:261,
+        name: 'Djebem',
+        departement_id: "koung-khi",
+        departement_name: "koung-khi",
+    },
+    // Les 4 arrondissements du département des Hauts-Plateaux
+    {
+        id:262,
+        name: 'Baham',
+        departement_id: "hauts-plateaux",
+        departement_name: "hauts-plateaux",
+    },
+    {
+        id:263,
+        name: 'Bamendjou',
+        departement_id: "hauts-plateaux",
+        departement_name: "hauts-plateaux",
+    },
+    {
+        id:264,
+        name: 'Bangou',
+        departement_id: "hauts-plateaux",
+        departement_name: "hauts-plateaux",
+    },
+    {
+        id:265,
+        name: 'Batié',
+        departement_id: "hauts-plateaux",
+        departement_name: "hauts-plateaux",
+    },
 ]
