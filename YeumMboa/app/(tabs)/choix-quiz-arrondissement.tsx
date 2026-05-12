@@ -14,7 +14,7 @@ export default function QuizArrondissement(){
             </View>
             <ScrollView style={styles.body}>
                 
-            <ScrollView>
+            </ScrollView>
         </SafeAreaView>
     )
 };

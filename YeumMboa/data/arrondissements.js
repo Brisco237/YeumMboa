@@ -1641,4 +1641,47 @@ export const  ARRONDISSEMENTS = [
         departement_id: "hauts-plateaux",
         departement_name: "hauts-plateaux",
     },
+    // Les 7 arrondissements du département du Haut-Nkam
+    {
+        id:266,
+        name: 'Bafang',
+        departement_id: "haut-nkam",
+        departement_name: "haut-nkam",
+    },
+    {
+        id:267,
+        name: 'Bakou',
+        departement_id: "haut-nkam",
+        departement_name: "haut-nkam",
+    },
+    {
+        id:268,
+        name: 'Bana',
+        departement_id: "haut-nkam",
+        departement_name: "haut-nkam",
+    },
+    {
+        id:269,
+        name: 'Bandja',
+        departement_id: "haut-nkam",
+        departement_name: "haut-nkam",
+    },
+    {
+        id:270,
+        name: 'Banka',
+        departement_id: "haut-nkam",
+        departement_name: "haut-nkam",
+    },
+    {
+        id:271,
+        name: 'Kekem',
+        departement_id: "haut-nkam",
+        departement_name: "haut-nkam",
+    },
+    {
+        id:272,
+        name: 'Banwa',
+        departement_id: "haut-nkam",
+        departement_name: "haut-nkam",
+    },
 ]
