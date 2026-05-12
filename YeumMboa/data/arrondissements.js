@@ -2008,8 +2008,39 @@ export const  ARRONDISSEMENTS = [
     },
     {
         id:325,
-        name: '	Upper Bayang',
+        name: 'Upper Bayang',
         departement_id: "manyu",
         departement_name: "manyu",
+    },
+    // Les 5 arrondissements du département de Momo
+    {
+        id:326,
+        name: 'Andek',
+        departement_id: "momo",
+        departement_name: "momo",
+    },
+    {
+        id:327,
+        name: 'Batibo',
+        departement_id: "momo",
+        departement_name: "momo",
+    },
+    {
+        id:328,
+        name: 'Mbengwi',
+        departement_id: "momo",
+        departement_name: "momo",
+    },
+    {
+        id:329,
+        name: 'Njikwa',
+        departement_id: "momo",
+        departement_name: "momo",
+    },
+    {
+        id:330,
+        name: 'Widikum-Boffe',
+        departement_id: "momo",
+        departement_name: "momo",
     },
 ] 
