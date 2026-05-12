@@ -1820,4 +1820,23 @@ export const  ARRONDISSEMENTS = [
         departement_id: "noun",
         departement_name: "noun",
     },
+    // Les 3 arrondissements du départements de Lebialem
+    {
+        id:295,
+        name: 'Alou',
+        departement_id: "lebialem",
+        departement_name: "lebialem",
+    },
+    {
+        id:296,
+        name: 'Menji',
+        departement_id: "lebialem",
+        departement_name: "lebialem",
+    },
+    {
+        id:297,
+        name: 'Wabane',
+        departement_id: "lebialem",
+        departement_name: "lebialem",
+    },
 ]
