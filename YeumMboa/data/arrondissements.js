@@ -1684,4 +1684,23 @@ export const  ARRONDISSEMENTS = [
         departement_id: "haut-nkam",
         departement_name: "haut-nkam",
     },
+    // Les 3 arrondissements du département de la Mifi
+    {
+        id:273,
+        name: 'Bafoussam I',
+        departement_id: "mifi",
+        departement_name: "mifi",
+    },
+    {
+        id:274,
+        name: 'Bafoussam II',
+        departement_id: "mifi",
+        departement_name: "mifi",
+    },
+    {
+        id:275,
+        name: 'Bafoussam III',
+        departement_id: "mifi",
+        departement_name: "mifi",
+    },
 ]
