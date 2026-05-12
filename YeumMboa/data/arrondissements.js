@@ -1703,4 +1703,41 @@ export const  ARRONDISSEMENTS = [
         departement_id: "mifi",
         departement_name: "mifi",
     },
+    // Les 6 arrondissements du département de la Menoua
+    {
+        id:276,
+        name: 'Dschang',
+        departement_id: "menoua",
+        departement_name: "menoua",
+    },
+    {
+        id:277,
+        name: 'Fokoué',
+        departement_id: "menoua",
+        departement_name: "menoua",
+    },
+    {
+        id:278,
+        name: 'Fongo-Tongo',
+        departement_id: "menoua",
+        departement_name: "menoua",
+    },
+    {
+        id:279,
+        name: 'Nkong-Zem',
+        departement_id: "menoua",
+        departement_name: "menoua",
+    },
+    {
+        id:280,
+        name: 'Penka-Michel',
+        departement_id: "menoua",
+        departement_name: "menoua",
+    },
+    {
+        id:281,
+        name: 'Santchou',
+        departement_id: "menoua",
+        departement_name: "menoua",
+    },
 ]
