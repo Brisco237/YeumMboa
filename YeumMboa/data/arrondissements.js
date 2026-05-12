@@ -1839,4 +1839,23 @@ export const  ARRONDISSEMENTS = [
         departement_id: "lebialem",
         departement_name: "lebialem",
     },
+    // Les 3 arrondissements du départements du Koupé-Manengouba
+    {
+        id:298,
+        name: 'Bangem',
+        departement_id: "koupé-manengouba",
+        departement_name: "koupé-manengouba",
+    },
+    {
+        id:299,
+        name: 'Nguti',
+        departement_id: "koupé-manengouba",
+        departement_name: "koupé-manengouba",
+    },
+    {
+        id:300,
+        name: 'Tombel',
+        departement_id: "koupé-manengouba",
+        departement_name: "koupé-manengouba",
+    },
 ]
