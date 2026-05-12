@@ -1983,8 +1983,33 @@ export const  ARRONDISSEMENTS = [
     },
     {
         id:321,
-        name: '	Toko',
+        name: 'Toko',
         departement_id: "ndian",
         departement_name: "ndian",
+    },
+    // Les 4 arrondissements du département de Manyu
+    {
+        id:322,
+        name: 'Akwaya',
+        departement_id: "manyu",
+        departement_name: "manyu",
+    },
+    {
+        id:323,
+        name: 'Eyumodjock',
+        departement_id: "manyu",
+        departement_name: "manyu",
+    },
+    {
+        id:324,
+        name: 'Mamfé Central',
+        departement_id: "manyu",
+        departement_name: "manyu",
+    },
+    {
+        id:325,
+        name: '	Upper Bayang',
+        departement_id: "manyu",
+        departement_name: "manyu",
     },
 ] 
