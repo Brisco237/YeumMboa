@@ -1932,4 +1932,59 @@ export const  ARRONDISSEMENTS = [
         departement_id: "fako",
         departement_name: "fako",
     },
+    // Les 9 arrondissements du département de Ndian
+    {
+        id:313,
+        name: 'Mundemba',
+        departement_id: "ndian",
+        departement_name: "ndian",
+    },
+    {
+        id:314,
+        name: 'Ekondo-Titi',
+        departement_id: "ndian",
+        departement_name: "ndian",
+    },
+    {
+        id:315,
+        name: 'Bamusso',
+        departement_id: "ndian",
+        departement_name: "ndian",
+    },
+    {
+        id:316,
+        name: 'Isanguele',
+        departement_id: "ndian",
+        departement_name: "ndian",
+    },
+    {
+        id:317,
+        name: '	Idabato',
+        departement_id: "ndian",
+        departement_name: "ndian",
+    },
+    {
+        id:318,
+        name: '	Kombo-Itindi',
+        departement_id: "ndian",
+        departement_name: "ndian",
+    },
+    {
+        id:319,
+        name: 'Kombo-Abedimo',
+        departement_id: "ndian",
+        departement_name: "ndian",
+    },
+    {
+        id:320,
+        name: 'Dikome-Balue',
+        departement_id: "ndian",
+        departement_name: "ndian",
+    },
+    {
+        id:321,
+        name: '	Toko',
+        departement_id: "ndian",
+        departement_name: "ndian",
+    },
 ] 
