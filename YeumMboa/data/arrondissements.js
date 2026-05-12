@@ -2136,4 +2136,41 @@ export const  ARRONDISSEMENTS = [
         departement_id: "boyo",
         departement_name: "boyo",
     },
+    // Les 6 arrondissements du département de Bui
+    {
+        id:346,
+        name: 'Jakiri',
+        departement_id: "bui",
+        departement_name: "bui",
+    },
+    {
+        id:347,
+        name: 'Kumbo',
+        departement_id: "bui",
+        departement_name: "bui",
+    },
+    {
+        id:348,
+        name: 'Nkum',
+        departement_id: "bui",
+        departement_name: "bui",
+    },
+    {
+        id:349,
+        name: 'Mbven ',
+        departement_id: "bui",
+        departement_name: "bui",
+    },
+    {
+        id:350,
+        name: 'Noni ',
+        departement_id: "bui",
+        departement_name: "bui",
+    },
+    {
+        id:351,
+        name: 'Oku',
+        departement_id: "bui",
+        departement_name: "bui",
+    },
 ] 
