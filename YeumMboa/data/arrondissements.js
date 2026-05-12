@@ -2157,13 +2157,13 @@ export const  ARRONDISSEMENTS = [
     },
     {
         id:349,
-        name: 'Mbven ',
+        name: 'Mbven',
         departement_id: "bui",
         departement_name: "bui",
     },
     {
         id:350,
-        name: 'Noni ',
+        name: 'Noni',
         departement_id: "bui",
         departement_name: "bui",
     },
@@ -2172,5 +2172,36 @@ export const  ARRONDISSEMENTS = [
         name: 'Oku',
         departement_id: "bui",
         departement_name: "bui",
+    },
+    // Les 5 arrondissements du département de Donga-Mantung
+    {
+        id:352,
+        name: 'Ako',
+        departement_id: "donga-mantung",
+        departement_name: "donga-mantung",
+    },
+    {
+        id:353,
+        name: 'Misaje',
+        departement_id: "donga-mantung",
+        departement_name: "donga-mantung",
+    },
+    {
+        id:354,
+        name: 'Ndu',
+        departement_id: "donga-mantung",
+        departement_name: "donga-mantung",
+    },
+    {
+        id:355,
+        name: 'Nkambé',
+        departement_id: "donga-mantung",
+        departement_name: "donga-mantung",
+    },
+    {
+        id:356,
+        name: 'Nwa',
+        departement_id: "donga-mantung",
+        departement_name: "donga-mantung",
     },
 ] 
