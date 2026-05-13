@@ -12,9 +12,12 @@ export default function QuizArrondissement(){
                 <ArrowLeft/>
                 <Text style={styles.title}>Quiz arrondissement</Text>
             </View>
+            <ScrollView style={styles.body}>
+                
+            </ScrollView>
         </SafeAreaView>
     )
-}
+};
 
 const styles = StyleSheet.create({
     container:{
@@ -32,6 +35,6 @@ const styles = StyleSheet.create({
     },
     title:{
         fontFamily:'Montserrat-Bold',
-        fontSize:20
+        fontSize:20,
     },
 })
