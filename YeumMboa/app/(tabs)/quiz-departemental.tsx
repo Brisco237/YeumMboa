@@ -35,27 +35,27 @@ export default function QuizDepartemental() {
   };
 
   if(gameOver){
-      const message = "Vous avez terminé les 58 départements !";
-      return(
-        <PageResultat
-          score={score}
-          message={message}
-          correctAnswers={correctAnswers}
-          incorrectAnswers={incorrectAnswers}
-          onRestart={() => {
-            setScore(0);
-            setRemainingRegions([...DEPARTEMENTS_CAMEROUN]);
-            setCurrentRegion(getRandomRegion([...DEPARTEMENTS_CAMEROUN]));
-            setQuestionNumber(0)
-            setSelectedRegion(null);
-            setShowAnswer(false);
-            setGameOver(false);
-            setCorrectAnswers(0)
-            setIncorrectAnswers(0)
-          }}
-        />
-      );
-    }
+    const message = "Vous avez terminé les 58 départements !";
+    return(
+      <PageResultat
+        score={score}
+        message={message}
+        correctAnswers={correctAnswers}
+        incorrectAnswers={incorrectAnswers}
+        onRestart={() => {
+          setScore(0);
+          setRemainingRegions([...DEPARTEMENTS_CAMEROUN]);
+          setCurrentRegion(getRandomRegion([...DEPARTEMENTS_CAMEROUN]));
+          setQuestionNumber(0)
+          setSelectedRegion(null);
+          setShowAnswer(false);
+          setGameOver(false);
+          setCorrectAnswers(0)
+          setIncorrectAnswers(0)
+        }}
+      />
+    );
+  }
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>

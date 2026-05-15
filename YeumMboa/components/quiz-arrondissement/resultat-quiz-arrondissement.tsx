@@ -5,7 +5,7 @@ import { colors } from '../../theme/color';
 
 
 export default function PageResultat(){
-
+    
 }
 
 const styles = StyleSheet.create({
