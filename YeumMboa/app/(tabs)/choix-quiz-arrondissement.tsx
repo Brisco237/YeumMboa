@@ -4,6 +4,8 @@ import ArrowLeft from '../../components/arrow-left';
 import { colors } from '../../theme/color'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useState } from 'react'
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import PageResultat from '../quiz-arrondissement/resultat-quiz-arrondissement';
 
 export default function QuizArrondissement(){
     return(
